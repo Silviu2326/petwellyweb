@@ -1,8 +1,8 @@
 {
   "site": {
-    "name": "Petwelly",
+    "name": "Petwellly",
     "tagline": "The ERP your dogs deserve",
-    "description": "Petwelly is the ERP built for professional dog breeders: health, litters, sales, client portal and finance — all in one place."
+    "description": "Petwellly is the ERP built for professional dog breeders: health, litters, sales, client portal and finance — all in one place."
   },
   "nav": {
     "features": "Features",
@@ -39,7 +39,7 @@
       "titleStart": "The ERP your dogs",
       "titleHighlight": "deserve",
       "titleEnd": ".",
-      "subtitle": "Petwelly puts records, health, litters, sales and the client portal in one place. Built with real breeders, not powerpoint slides.",
+      "subtitle": "Petwellly puts records, health, litters, sales and the client portal in one place. Built with real breeders, not powerpoint slides.",
       "ctaPrimary": "Start 14-day free trial",
       "ctaSecondary": "See features",
       "trust": "No card required · Cancel anytime · Free migration",
@@ -92,7 +92,7 @@
       }
     },
     "stats": {
-      "title": "Why breeders switch to Petwelly",
+      "title": "Why breeders switch to Petwellly",
       "items": {
         "time": { "value": "1.5–2 h", "label": "saved every day" },
         "tools": { "value": "6 → 1", "label": "tools to a single app" },
@@ -150,7 +150,7 @@
       "items": [
         {
           "q": "Do I need technical knowledge?",
-          "a": "No. Petwelly is built for breeders, not for developers. The setup wizard configures everything in 30 minutes."
+          "a": "No. Petwellly is built for breeders, not for developers. The setup wizard configures everything in 30 minutes."
         },
         {
           "q": "What if I already have everything in Excel?",
@@ -210,7 +210,7 @@
       },
       "health": {
         "title": "Veterinary health",
-        "description": "Calendar, digital prescriptions and SOAP notes. The vet works inside Petwelly.",
+        "description": "Calendar, digital prescriptions and SOAP notes. The vet works inside Petwellly.",
         "items": [
           "Vet calendar by week / month / quarter",
           "Pre-configured protocols by breed and age",
@@ -414,7 +414,7 @@
   },
   "about": {
     "title": "Built with breeders. Not with powerpoints.",
-    "subtitle": "Petwelly was born in a kennel hallway, not in a corner office.",
+    "subtitle": "Petwellly was born in a kennel hallway, not in a corner office.",
     "story": {
       "title": "Our story",
       "body": "We started by helping an Australian Shepherd kennel get rid of 9 spreadsheets. In three months they recovered an hour a day. We built the rest with 12 more kennels. Today we're a small team with a big goal: stop management from stealing your time so you can give it back to your dogs."
@@ -452,7 +452,7 @@
     },
     "ctaFinal": {
       "title": "Fancy a virtual coffee?",
-      "body": "We'll show you Petwelly with your real spreadsheet, no scripts.",
+      "body": "We'll show you Petwellly with your real spreadsheet, no scripts.",
       "primary": "Book 20 minutes",
       "secondary": "See pricing"
     }
@@ -472,7 +472,7 @@
   },
   "caseStudies": {
     "title": "Case studies",
-    "subtitle": "Real kennels with real numbers, before and after Petwelly.",
+    "subtitle": "Real kennels with real numbers, before and after Petwellly.",
     "readCase": "Read full case",
     "metrics": {
       "timeSaved": "Time saved",
@@ -539,7 +539,7 @@
   },
   "solutions": {
     "title": "Solutions by breed",
-    "subtitle": "Petwelly self-configures for the breed you raise. Each breed brings its own health protocols, genetic tests and timelines.",
+    "subtitle": "Petwellly self-configures for the breed you raise. Each breed brings its own health protocols, genetic tests and timelines.",
     "ctaPrimary": "Try free with my breed",
     "ctaSecondary": "See pricing",
     "intro": "Pick your breed and we show you what changes."
@@ -587,12 +587,12 @@
     "privacy": {
       "title": "Privacy policy",
       "lastUpdate": "Last update: January 1, 2026",
-      "intro": "At Petwelly we treat your personal data with the same care you'd give a litter. This policy explains what we collect, why and how we protect it."
+      "intro": "At Petwellly we treat your personal data with the same care you'd give a litter. This policy explains what we collect, why and how we protect it."
     },
     "terms": {
       "title": "Terms and conditions",
       "lastUpdate": "Last update: January 1, 2026",
-      "intro": "These terms govern your use of the Petwelly platform. By creating an account you accept them."
+      "intro": "These terms govern your use of the Petwellly platform. By creating an account you accept them."
     },
     "cookies": {
       "title": "Cookie policy",

@@ -29,7 +29,7 @@ interface BuildMetadataInput {
 
 /**
  * Construye un objeto `Metadata` completo para Next.js incluyendo:
- *  - title con template "{título} · Petwelly"
+ *  - title con template "{título} · Petwellly"
  *  - description y keywords
  *  - canonical URL absoluta
  *  - alternates.languages (hreflang correcto a TODAS las versiones)

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Menu, Sparkles, X } from 'lucide-react';
+import { ArrowRight, Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/cn';
 import { siteConfig } from '@/lib/site';
@@ -25,10 +25,14 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-line-light">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Petwelly">
-          <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-sm">
-            <Sparkles size={18} className="text-white" aria-hidden />
-          </div>
+        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={siteConfig.name}>
+          <img
+            src="/logo.png"
+            alt=""
+            width={36}
+            height={36}
+            className="h-9 w-9 shrink-0"
+          />
           <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
         </Link>
 
@@ -86,9 +90,13 @@ export function Header() {
           <div className="absolute inset-y-0 right-0 w-full max-w-sm bg-surface shadow-cardHover overflow-y-auto p-5">
             <div className="flex items-center justify-between mb-6">
               <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-                <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-                  <Sparkles size={18} className="text-white" aria-hidden />
-                </div>
+                <img
+                  src="/logo.png"
+                  alt=""
+                  width={36}
+                  height={36}
+                  className="h-9 w-9 shrink-0"
+                />
                 <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
               </Link>
               <button

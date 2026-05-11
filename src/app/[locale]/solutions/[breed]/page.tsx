@@ -153,8 +153,8 @@ export default async function BreedSolutionPage({
         <CTASection
           title={
             locale === 'es'
-              ? `Petwelly ya viene preconfigurado para ${c.name}`
-              : `Petwelly comes pre-configured for ${c.name}`
+              ? `Petwellly ya viene preconfigurado para ${c.name}`
+              : `Petwellly comes pre-configured for ${c.name}`
           }
           body={tSol('subtitle')}
           primary={{ label: tSol('ctaPrimary'), external: siteConfig.appUrl }}

@@ -57,7 +57,7 @@ function PrivacyES() {
       </ul>
       <h2>3. Finalidades</h2>
       <ul>
-        <li>Prestar el servicio de la plataforma Petwelly.</li>
+        <li>Prestar el servicio de la plataforma Petwellly.</li>
         <li>Gestión comercial y soporte.</li>
         <li>Cumplimiento de obligaciones fiscales.</li>
         <li>Envío de comunicaciones (con tu consentimiento).</li>
@@ -105,7 +105,7 @@ function PrivacyEN() {
       </ul>
       <h2>3. Purposes</h2>
       <ul>
-        <li>Providing the Petwelly platform service.</li>
+        <li>Providing the Petwellly platform service.</li>
         <li>Commercial management and support.</li>
         <li>Compliance with tax obligations.</li>
         <li>Communications (with your consent).</li>

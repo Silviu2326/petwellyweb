@@ -14,7 +14,7 @@ function clean(url: string | undefined, fallback: string) {
 }
 
 export const siteConfig = {
-  name: 'Petwelly',
+  name: 'Petwellly',
   legalName: 'Petwelly Software, S.L.',
   description:
     'ERP profesional para criaderos de perros: salud, camadas, ventas, portal del cliente y finanzas en un único sitio.',

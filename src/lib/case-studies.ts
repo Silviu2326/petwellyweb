@@ -21,7 +21,7 @@ export interface CaseStudy {
   breed: { es: string; en: string };
   location: string;
   size: { es: string; en: string };
-  /** Tiempo en Petwelly (años o meses). */
+  /** Tiempo en Petwellly (años o meses). */
   withPetwelly: { es: string; en: string };
   metrics: CaseMetric[];
   short: { es: string; en: string };

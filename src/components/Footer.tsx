@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import { Sparkles } from 'lucide-react';
 import { Link } from '@/i18n/routing';
 import { siteConfig } from '@/lib/site';
 import { NewsletterForm } from './NewsletterForm';
@@ -31,10 +30,14 @@ export function Footer({ locale }: { locale: 'es' | 'en' }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
-            <Link href="/" className="flex items-center gap-2.5 mb-4" aria-label="Petwelly">
-              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-                <Sparkles size={18} className="text-white" aria-hidden />
-              </div>
+            <Link href="/" className="flex items-center gap-2.5 mb-4" aria-label={siteConfig.name}>
+              <img
+                src="/logo.png"
+                alt=""
+                width={36}
+                height={36}
+                className="h-9 w-9 shrink-0"
+              />
               <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
             </Link>
             <p className="text-sm text-ink-secondary max-w-sm leading-relaxed">

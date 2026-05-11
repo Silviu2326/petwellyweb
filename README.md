@@ -1,6 +1,6 @@
 # petwelly-web
 
-Web pública de marketing de **Petwelly** (el ERP para criaderos profesionales).
+Web pública de marketing de **Petwellly** (el ERP para criaderos profesionales).
 Construida con **Next.js 14 App Router + TypeScript + Tailwind CSS + next-intl + MDX**.
 
 > Convive en el monorepo con `petwelly/` (Vite/React, el ERP autenticado). Esta carpeta sirve **únicamente** las páginas públicas (Home, Funcionalidades, Precios, Casos de éxito, Soluciones por raza, Sobre nosotros, Blog, Contacto y páginas legales) en español e inglés con SEO completo.

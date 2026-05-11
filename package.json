@@ -2,7 +2,7 @@
   "name": "petwelly-web",
   "version": "0.1.0",
   "private": true,
-  "description": "Web pública de marketing de Petwelly (Next.js 14, App Router, ES/EN, SEO completo)",
+  "description": "Web pública de marketing de Petwellly (Next.js 14, App Router, ES/EN, SEO completo)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

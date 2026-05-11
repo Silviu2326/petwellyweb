@@ -1,8 +1,8 @@
 {
   "site": {
-    "name": "Petwelly",
+    "name": "Petwellly",
     "tagline": "El ERP que tus perros merecen",
-    "description": "Petwelly es el ERP especializado en criaderos profesionales: salud, camadas, ventas, portal del cliente y finanzas en un único sitio."
+    "description": "Petwellly es el ERP especializado en criaderos profesionales: salud, camadas, ventas, portal del cliente y finanzas en un único sitio."
   },
   "nav": {
     "features": "Funcionalidades",
@@ -39,7 +39,7 @@
       "titleStart": "El ERP que tus perros",
       "titleHighlight": "merecen",
       "titleEnd": ".",
-      "subtitle": "Petwelly une fichas, salud, camadas, ventas y portal del cliente en un único sitio. Hecho con criadores reales, no con powerpoints.",
+      "subtitle": "Petwellly une fichas, salud, camadas, ventas y portal del cliente en un único sitio. Hecho con criadores reales, no con powerpoints.",
       "ctaPrimary": "Empezar gratis 14 días",
       "ctaSecondary": "Ver funcionalidades",
       "trust": "Sin tarjeta · Cancela cuando quieras · Migración gratis",
@@ -58,7 +58,7 @@
       }
     },
     "logos": {
-      "title": "Confían en Petwelly criaderos de toda España"
+      "title": "Confían en Petwellly criaderos de toda España"
     },
     "features": {
       "badge": "Todo en uno",
@@ -92,7 +92,7 @@
       }
     },
     "stats": {
-      "title": "Por qué los criadores cambian a Petwelly",
+      "title": "Por qué los criadores cambian a Petwellly",
       "items": {
         "time": { "value": "1.5–2 h", "label": "recuperadas al día" },
         "tools": { "value": "6 → 1", "label": "herramientas a una sola" },
@@ -150,7 +150,7 @@
       "items": [
         {
           "q": "¿Necesito conocimientos técnicos?",
-          "a": "No. Petwelly está hecho para criadores, no para informáticos. El asistente inicial te configura todo en 30 minutos."
+          "a": "No. Petwellly está hecho para criadores, no para informáticos. El asistente inicial te configura todo en 30 minutos."
         },
         {
           "q": "¿Y si ya tengo Excel con todo?",
@@ -210,7 +210,7 @@
       },
       "health": {
         "title": "Salud veterinaria",
-        "description": "Calendario, recetas digitales y notas SOAP. El vet trabaja desde Petwelly.",
+        "description": "Calendario, recetas digitales y notas SOAP. El vet trabaja desde Petwellly.",
         "items": [
           "Calendario veterinario por semana / mes / trimestre",
           "Protocolos preconfigurados por raza y edad",
@@ -414,7 +414,7 @@
   },
   "about": {
     "title": "Hecho con criadores. No con powerpoints.",
-    "subtitle": "Petwelly nace en un pasillo de criadero, no en una oficina con vistas.",
+    "subtitle": "Petwellly nace en un pasillo de criadero, no en una oficina con vistas.",
     "story": {
       "title": "Nuestra historia",
       "body": "Empezamos ayudando a un criadero de pastor australiano a sacarse 9 hojas de Excel de encima. En tres meses recuperaron una hora al día y montamos lo siguiente con otros 12 criaderos. Hoy somos un equipo pequeño con un objetivo enorme: que la gestión deje de robaros tiempo a vosotros y se lo devuelva a los perros."
@@ -452,7 +452,7 @@
     },
     "ctaFinal": {
       "title": "¿Te apetece tomar un café virtual?",
-      "body": "Te enseñamos Petwelly con tu Excel real, sin guiones.",
+      "body": "Te enseñamos Petwellly con tu Excel real, sin guiones.",
       "primary": "Reservar 20 minutos",
       "secondary": "Ver precios"
     }
@@ -472,7 +472,7 @@
   },
   "caseStudies": {
     "title": "Casos de éxito",
-    "subtitle": "Criaderos reales con cifras reales antes y después de Petwelly.",
+    "subtitle": "Criaderos reales con cifras reales antes y después de Petwellly.",
     "readCase": "Ver caso completo",
     "metrics": {
       "timeSaved": "Tiempo recuperado",
@@ -539,7 +539,7 @@
   },
   "solutions": {
     "title": "Soluciones por raza",
-    "subtitle": "Petwelly se configura solo según la raza que crías. Cada raza trae sus protocolos sanitarios, sus pruebas genéticas y sus tiempos.",
+    "subtitle": "Petwellly se configura solo según la raza que crías. Cada raza trae sus protocolos sanitarios, sus pruebas genéticas y sus tiempos.",
     "ctaPrimary": "Probar gratis con mi raza",
     "ctaSecondary": "Ver precios",
     "intro": "Selecciona tu raza y te enseñamos qué cambia."
@@ -587,12 +587,12 @@
     "privacy": {
       "title": "Política de privacidad",
       "lastUpdate": "Última actualización: 1 de enero de 2026",
-      "intro": "En Petwelly tratamos tus datos personales con el cuidado que tratarías a tu camada. Esta política explica qué recogemos, por qué y cómo lo protegemos."
+      "intro": "En Petwellly tratamos tus datos personales con el cuidado que tratarías a tu camada. Esta política explica qué recogemos, por qué y cómo lo protegemos."
     },
     "terms": {
       "title": "Términos y condiciones",
       "lastUpdate": "Última actualización: 1 de enero de 2026",
-      "intro": "Estos términos rigen el uso de la plataforma Petwelly. Al crear una cuenta, aceptas estos términos."
+      "intro": "Estos términos rigen el uso de la plataforma Petwellly. Al crear una cuenta, aceptas estos términos."
     },
     "cookies": {
       "title": "Política de cookies",

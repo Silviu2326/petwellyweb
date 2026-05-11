@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
   const locale = localeParam && locales.includes(localeParam) ? localeParam : 'es';
   const posts = getAllPosts(locale);
 
-  const title = locale === 'es' ? 'Blog Petwelly' : 'Petwelly Blog';
+  const title = locale === 'es' ? 'Blog Petwellly' : 'Petwellly Blog';
   const description =
     locale === 'es'
       ? 'Guías prácticas de gestión, salud y crecimiento para criaderos profesionales.'

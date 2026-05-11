@@ -45,7 +45,7 @@ function TermsES() {
     <>
       <h2>1. Objeto</h2>
       <p>
-        Estos términos regulan el acceso y uso de la plataforma Petwelly por parte de los
+        Estos términos regulan el acceso y uso de la plataforma Petwellly por parte de los
         usuarios registrados. Al crear una cuenta aceptas estos términos.
       </p>
       <h2>2. Cuenta</h2>
@@ -56,7 +56,7 @@ function TermsES() {
       </p>
       <h2>3. Suscripción y facturación</h2>
       <p>
-        El uso de Petwelly requiere una suscripción de pago tras los 14 días de prueba. Los
+        El uso de Petwellly requiere una suscripción de pago tras los 14 días de prueba. Los
         precios se publican en{' '}
         <a href={`${siteConfig.url}/precios`}>petwelly.com/precios</a> y pueden incluir IVA según tu
         país. La cancelación detiene la próxima renovación; no devolvemos importes prorrateados
@@ -92,7 +92,7 @@ function TermsEN() {
     <>
       <h2>1. Purpose</h2>
       <p>
-        These terms govern access and use of the Petwelly platform by registered users. By
+        These terms govern access and use of the Petwellly platform by registered users. By
         creating an account you accept them.
       </p>
       <h2>2. Account</h2>
@@ -103,7 +103,7 @@ function TermsEN() {
       </p>
       <h2>3. Subscription and billing</h2>
       <p>
-        Use of Petwelly requires a paid subscription after the 14-day trial. Prices are published
+        Use of Petwellly requires a paid subscription after the 14-day trial. Prices are published
         at <a href={`${siteConfig.url}/en/pricing`}>petwelly.com/en/pricing</a> and may include VAT
         depending on your country. Cancellation stops the next renewal; we do not refund prorated
         amounts unless legally required.

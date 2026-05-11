@@ -85,8 +85,8 @@ export default async function LocaleLayout({
             src="https://plausible.io/js/script.js"
           />
         )}
-        <link rel="alternate" type="application/rss+xml" title="Petwelly Blog (ES)" href="/feed.xml?locale=es" />
-        <link rel="alternate" type="application/rss+xml" title="Petwelly Blog (EN)" href="/feed.xml?locale=en" />
+        <link rel="alternate" type="application/rss+xml" title="Petwellly Blog (ES)" href="/feed.xml?locale=es" />
+        <link rel="alternate" type="application/rss+xml" title="Petwellly Blog (EN)" href="/feed.xml?locale=en" />
       </head>
       <body className="min-h-screen bg-background text-ink antialiased flex flex-col">
         <a
@@ -104,8 +104,8 @@ export default async function LocaleLayout({
           <WhatsAppFloat
             defaultMessage={
               locale === 'en'
-                ? 'Hi! I\'d like to know more about Petwelly.'
-                : '¡Hola! Me gustaría saber más sobre Petwelly.'
+                ? 'Hi! I\'d like to know more about Petwellly.'
+                : '¡Hola! Me gustaría saber más sobre Petwellly.'
             }
           />
         </NextIntlClientProvider>

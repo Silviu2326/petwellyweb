@@ -9,7 +9,7 @@ export default function RootNotFound() {
       <head>
         <meta charSet="utf-8" />
         <meta name="robots" content="noindex" />
-        <title>404 · Petwelly</title>
+        <title>404 · Petwellly</title>
         <style>{`
           body{font-family:system-ui,Inter,sans-serif;background:#FFFBF5;color:#1C1C1E;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
           .b{font-size:96px;font-weight:800;color:#E8F5EC;line-height:1;margin:0 0 16px}
