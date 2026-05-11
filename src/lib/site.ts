@@ -13,6 +13,8 @@ function clean(url: string | undefined, fallback: string) {
   return v.endsWith('/') ? v.slice(0, -1) : v;
 }
 
+const appUrl = clean(process.env.NEXT_PUBLIC_APP_URL, 'https://app.petwellly.com');
+
 export const siteConfig = {
   name: 'Petwellly',
   legalName: 'Petwelly Software, S.L.',
@@ -21,7 +23,9 @@ export const siteConfig = {
   descriptionEn:
     'Professional ERP for dog kennels: health, litters, sales, client portal and finance in one place.',
   url: clean(process.env.NEXT_PUBLIC_SITE_URL, fallbackSiteUrl),
-  appUrl: clean(process.env.NEXT_PUBLIC_APP_URL, 'https://app.petwellly.com'),
+  appUrl,
+  /** Entry público al modo demo del ERP (sesión fake, escrituras bloqueadas). */
+  demoUrl: `${appUrl}/demo`,
   contactEndpoint: process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '34600000000',
   gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION || '',

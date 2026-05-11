@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Eye, Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/cn';
 import { siteConfig } from '@/lib/site';
@@ -61,6 +61,13 @@ export function Header() {
             className="hidden sm:inline-flex items-center h-9 px-3 text-sm font-semibold text-ink-secondary hover:text-ink rounded-lg"
           >
             {t('login')}
+          </a>
+          <a
+            href={siteConfig.demoUrl}
+            className="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-xl text-sm font-semibold text-primary border border-primary/30 hover:bg-primary-lighter transition-colors"
+          >
+            <Eye size={14} aria-hidden />
+            {t('viewDemo')}
           </a>
           <a
             href={siteConfig.appUrl}
@@ -133,6 +140,13 @@ export function Header() {
                 className="h-11 inline-flex items-center justify-center px-5 rounded-xl text-sm font-semibold text-ink border border-line"
               >
                 {t('login')}
+              </a>
+              <a
+                href={siteConfig.demoUrl}
+                className="h-11 inline-flex items-center justify-center gap-2 px-5 rounded-xl text-sm font-semibold text-primary border border-primary/40 bg-primary-lighter/40"
+              >
+                <Eye size={14} />
+                {t('viewDemo')}
               </a>
               <a
                 href={siteConfig.appUrl}
