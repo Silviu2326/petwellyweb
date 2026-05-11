@@ -1,0 +1,618 @@
+{
+  "site": {
+    "name": "Petwelly",
+    "tagline": "El ERP que tus perros merecen",
+    "description": "Petwelly es el ERP especializado en criaderos profesionales: salud, camadas, ventas, portal del cliente y finanzas en un único sitio."
+  },
+  "nav": {
+    "features": "Funcionalidades",
+    "pricing": "Precios",
+    "about": "Equipo",
+    "blog": "Blog",
+    "caseStudies": "Casos de éxito",
+    "solutions": "Soluciones",
+    "contact": "Contacto",
+    "login": "Entrar",
+    "ctaFree": "Empezar gratis",
+    "ctaTrial": "Empezar gratis 14 días",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "footer": {
+    "product": "Producto",
+    "resources": "Recursos",
+    "company": "Empresa",
+    "legal": "Legal",
+    "rights": "Todos los derechos reservados",
+    "madeWith": "Hecho con cariño en España",
+    "newsletter": {
+      "title": "Recibe consejos para tu criadero",
+      "subtitle": "Una newsletter mensual: gestión, salud y casos reales. Cero spam.",
+      "placeholder": "tu@email.com",
+      "submit": "Suscribirme",
+      "privacy": "Al suscribirte aceptas nuestra política de privacidad."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "ERP para criaderos profesionales",
+      "titleStart": "El ERP que tus perros",
+      "titleHighlight": "merecen",
+      "titleEnd": ".",
+      "subtitle": "Petwelly une fichas, salud, camadas, ventas y portal del cliente en un único sitio. Hecho con criadores reales, no con powerpoints.",
+      "ctaPrimary": "Empezar gratis 14 días",
+      "ctaSecondary": "Ver funcionalidades",
+      "trust": "Sin tarjeta · Cancela cuando quieras · Migración gratis",
+      "mockup": {
+        "kennel": "Bosque Verde",
+        "dogs": "12 perros · 5 reservas activas",
+        "salesUp": "+18% ventas",
+        "today": "Hoy",
+        "month": "Mes",
+        "vac": "Vac. OK",
+        "list1": "Reserva confirmada · Ana López",
+        "list2": "Vacuna pendiente · Thor (6 días)",
+        "list3": "Parto previsto · Mía (22 may)",
+        "saveLabel": "Ahorra",
+        "saveValue": "8 h/sem"
+      }
+    },
+    "logos": {
+      "title": "Confían en Petwelly criaderos de toda España"
+    },
+    "features": {
+      "badge": "Todo en uno",
+      "title": "Diseñado para criaderos modernos",
+      "subtitle": "Sustituye 6 herramientas (Excel, WhatsApp, Drive, calendario, formulario, Stripe) por una.",
+      "items": {
+        "dog": {
+          "title": "Ficha completa por perro",
+          "body": "Salud, genética, documentos e historial — todo trazable y compartible con tu vet o cliente."
+        },
+        "litter": {
+          "title": "Camadas y whelping log",
+          "body": "Programa cruces, registra el parto en directo y gestiona reservas de cachorros sin caos."
+        },
+        "client": {
+          "title": "Portal del cliente",
+          "body": "Tus clientes ven sus reservas, fotos del cachorro y facturas. Tú escribes una vez."
+        },
+        "calendar": {
+          "title": "Calendario unificado",
+          "body": "Vacunas, partos, entregas, visitas vet. Un único calendario por criadero."
+        },
+        "finance": {
+          "title": "Finanzas claras",
+          "body": "Ingresos, gastos y facturas con un clic. Margen real por camada y por perro."
+        },
+        "pipeline": {
+          "title": "Pipeline de ventas",
+          "body": "De consulta a entrega: kanban con todos los interesados, sin perder uno."
+        }
+      }
+    },
+    "stats": {
+      "title": "Por qué los criadores cambian a Petwelly",
+      "items": {
+        "time": { "value": "1.5–2 h", "label": "recuperadas al día" },
+        "tools": { "value": "6 → 1", "label": "herramientas a una sola" },
+        "rating": { "value": "4.9/5", "label": "satisfacción de criadores" },
+        "setup": { "value": "30 min", "label": "para arrancar (con tus datos)" }
+      }
+    },
+    "workflow": {
+      "badge": "Cómo funciona",
+      "title": "De Excel y WhatsApp a un criadero gestionado de verdad",
+      "subtitle": "Cuatro pasos para tener tu día bajo control.",
+      "steps": {
+        "import": {
+          "title": "1 · Importa lo que ya tienes",
+          "body": "Sube tu CSV de perros y clientes. El asistente lo deja listo en 10 minutos."
+        },
+        "configure": {
+          "title": "2 · Configura una vez",
+          "body": "Plantillas de contrato, protocolos veterinarios, notificaciones automáticas: lo defines y se aplica solo."
+        },
+        "operate": {
+          "title": "3 · Opera con un clic",
+          "body": "Cada acción (reserva, parto, vacuna, factura) se conecta con todo lo demás sin que copies datos."
+        },
+        "grow": {
+          "title": "4 · Crece sobre datos reales",
+          "body": "Ves tu margen por camada, por raza y por cliente. Decides con números, no con sensaciones."
+        }
+      }
+    },
+    "testimonials": {
+      "badge": "4.9/5 según criadores reales",
+      "title": "Hablan los criaderos",
+      "items": [
+        {
+          "name": "Marta R.",
+          "role": "Criadero Estrella Polar · Madrid",
+          "text": "Pasé de 3 hojas Excel a una sola pantalla. He recuperado mis sábados."
+        },
+        {
+          "name": "Jorge L.",
+          "role": "Bulldog del Valle · Barcelona",
+          "text": "Mis clientes ven a sus cachorros crecer. Cero llamadas pidiendo fotos."
+        },
+        {
+          "name": "Lucía S.",
+          "role": "Cría del Bosque · Asturias",
+          "text": "El whelping log me salvó en mi último parto difícil. Tener el histórico ahí fue oro."
+        }
+      ]
+    },
+    "faq": {
+      "badge": "Dudas frecuentes",
+      "title": "Preguntas que nos hacen los criadores",
+      "items": [
+        {
+          "q": "¿Necesito conocimientos técnicos?",
+          "a": "No. Petwelly está hecho para criadores, no para informáticos. El asistente inicial te configura todo en 30 minutos."
+        },
+        {
+          "q": "¿Y si ya tengo Excel con todo?",
+          "a": "Lo importamos por ti. Subes tu archivo y el sistema crea fichas, clientes y reservas sin que teclees nada."
+        },
+        {
+          "q": "¿Puedo invitar a mi veterinario?",
+          "a": "Sí. Le das acceso a las fichas que necesite y nada más. Si está en plantilla, tiene su propio panel."
+        },
+        {
+          "q": "¿Qué pasa con mis datos si cancelo?",
+          "a": "Son tuyos. Exportas todo en CSV/PDF cuando quieras. No te bloqueamos nada."
+        },
+        {
+          "q": "¿Funciona desde el móvil?",
+          "a": "Sí, totalmente responsive. Pesas un cachorro o registras una vacuna desde el corral con el móvil."
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Listo para simplificar tu criadero?",
+      "body": "14 días gratis. Sin tarjeta. Migramos tus datos por ti.",
+      "primary": "Crear mi cuenta",
+      "secondary": "Ver precios"
+    }
+  },
+  "features": {
+    "title": "Funcionalidades",
+    "subtitle": "Todo lo que un criadero profesional necesita, sin las vueltas de un ERP genérico.",
+    "intro": "Cada módulo está hecho para conectarse con los demás: una vacuna descuenta inventario, una reserva genera envío, un parto actualiza la camada y crea fichas de cachorro.",
+    "groups": {
+      "dogs": {
+        "title": "Ficha del perro",
+        "description": "El expediente clínico, genético y reproductivo de cada animal en una sola pantalla.",
+        "items": [
+          "Resumen, microchip, peso y estado disponible/reservado/vendido",
+          "Historia médica unificada en orden cronológico",
+          "Genética: DM, PRA, MDR1, displasias, panel completo",
+          "Pedigree visual con aviso de cruces de riesgo",
+          "Pesos con histórico y gráfico semanal",
+          "Galería de fotos y foto destacada para catálogo",
+          "Cartilla sanitaria PDF generada con un clic"
+        ]
+      },
+      "litters": {
+        "title": "Camadas y cría",
+        "description": "Del celo a la entrega del cachorro: hitos automáticos y reservas en gestación.",
+        "items": [
+          "Estados: planificada → confirmada → nacida → destetada → entregada",
+          "Hitos automáticos: monta, ovulación, ecografía, parto, destete",
+          "Pesaje neonatal semanal con gráfica de supervivencia",
+          "Reservas de cachorros aún no nacidos con lista de espera",
+          "Reproductor externo con pedigree y datos del propietario",
+          "Contratos automáticos al destete desde plantilla",
+          "Reporte de fertilidad por hembra (intervalo entre celos, supervivencia)"
+        ]
+      },
+      "health": {
+        "title": "Salud veterinaria",
+        "description": "Calendario, recetas digitales y notas SOAP. El vet trabaja desde Petwelly.",
+        "items": [
+          "Calendario veterinario por semana / mes / trimestre",
+          "Protocolos preconfigurados por raza y edad",
+          "Cartilla sanitaria en PDF generada al momento",
+          "Alerta de cruce de riesgo entre dos portadores",
+          "Receta digital con dosis, duración y posología",
+          "Tracking de tratamiento en curso (cumplimiento)",
+          "Pruebas genéticas integradas en el árbol del pedigree"
+        ]
+      },
+      "clients": {
+        "title": "Clientes",
+        "description": "Pipeline kanban con todo el histórico de cada cliente en un único hilo.",
+        "items": [
+          "Kanban: lead → contactado → interesado → reserva → cliente",
+          "Historial de comunicaciones interno + WhatsApp + email",
+          "Importador CSV de tu base existente",
+          "Lifetime value, perros adquiridos, fecha de última compra",
+          "Recordatorios automáticos (cumpleaños, revisión 6 meses)"
+        ]
+      },
+      "reservations": {
+        "title": "Reservas",
+        "description": "Contrato, firma y checklist de entrega sin Word ni impresora.",
+        "items": [
+          "Contrato PDF desde plantilla con firma por clic",
+          "Checklist de entrega: cartilla, pedigree, kit, contrato, pago",
+          "Notificaciones automáticas al cambiar de estado",
+          "Recordatorio una semana antes de la entrega",
+          "Pagos parciales con barra de progreso visible"
+        ]
+      },
+      "finance": {
+        "title": "Finanzas e inventario",
+        "description": "Margen real al céntimo y stock que se descuenta solo.",
+        "items": [
+          "Presupuestos que se convierten en factura con un clic",
+          "Reporte por perro y por camada (coste vs ingreso)",
+          "IVA configurable y multi-tipo",
+          "Inventario auto-descuento al aplicar vacunas o ventas",
+          "Lotes con caducidad para vacunas y medicación",
+          "Proveedores con histórico de precios",
+          "Alerta de facturas vencidas con badge en el menú"
+        ]
+      },
+      "shipping": {
+        "title": "Logística y envíos",
+        "description": "SEUR, Correos y MRW conectados. Tracking automático y albarán PDF.",
+        "items": [
+          "Tracking automático con SEUR, Correos y MRW",
+          "Direcciones estructuradas listas para etiquetas",
+          "Confirmación de entrega con foto y firma",
+          "Albarán PDF generado al momento",
+          "Documentos de viaje y CITES si aplica"
+        ]
+      },
+      "portal": {
+        "title": "Portal del cliente",
+        "description": "Tu cliente ve a su cachorro crecer y paga online sin tu intervención.",
+        "items": [
+          "Onboarding guiado la primera vez",
+          "Cartilla sanitaria visible del cachorro",
+          "Galería semanal de seguimiento desde el nacimiento",
+          "Tracking del envío en tiempo real",
+          "Subida de documentos (DNI, pago, contrato)",
+          "Chat directo con plantillas y adjuntos"
+        ]
+      },
+      "site": {
+        "title": "Tu sitio público (microsite)",
+        "description": "Cada criadero tiene un microsite generado solo, optimizado para SEO.",
+        "items": [
+          "Sistema de bloques drag & drop personalizable",
+          "Catálogo de perros con foto destacada y galería",
+          "Botón «Reservar este cachorro» directo a tu CRM",
+          "WhatsApp flotante con mensaje pre-rellenado",
+          "Calendario público de próximas camadas",
+          "Datos estructurados Schema.org para Google"
+        ]
+      }
+    },
+    "ctaFinal": {
+      "title": "Hay 17 áreas más. ¿Vemos las que te interesan en una demo?",
+      "body": "Te enseñamos lo tuyo en 20 minutos, sin compromiso.",
+      "primary": "Reservar demo",
+      "secondary": "Ver precios"
+    }
+  },
+  "pricing": {
+    "title": "Precios simples, pensados para criaderos reales",
+    "subtitle": "Sin permanencia, sin recargos por usuario. Empieza gratis 14 días.",
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "yearlyDiscount": "−20%",
+    "perMonth": "/mes",
+    "billedYearly": "facturado anual",
+    "billedMonthly": "facturado mensual",
+    "popular": "Más elegido",
+    "ctaTrial": "Empezar prueba",
+    "ctaContact": "Hablar con ventas",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "tagline": "Para criaderos que arrancan",
+        "monthly": 29,
+        "yearly": 23,
+        "features": [
+          "Hasta 15 perros activos",
+          "Hasta 50 clientes",
+          "1 usuario",
+          "Fichas, salud y camadas",
+          "Microsite básico",
+          "Soporte por email"
+        ]
+      },
+      "breeder": {
+        "name": "Breeder+",
+        "tagline": "Lo que la mayoría elige",
+        "monthly": 79,
+        "yearly": 63,
+        "features": [
+          "Perros y clientes ilimitados",
+          "5 usuarios incluidos",
+          "Todo lo de Starter +",
+          "Portal del cliente completo",
+          "Pipeline de ventas y kanban",
+          "Inventario con lotes y caducidad",
+          "Microsite avanzado con bloques",
+          "Integraciones SEUR/Correos/MRW",
+          "Soporte prioritario chat + email"
+        ]
+      },
+      "kennel": {
+        "name": "Kennel Pro",
+        "tagline": "Para criaderos grandes y multi-localización",
+        "monthly": 149,
+        "yearly": 119,
+        "features": [
+          "Todo lo de Breeder+ +",
+          "Usuarios ilimitados",
+          "Multi-criadero / multi-marca",
+          "Roles y permisos granulares",
+          "Veterinario en plantilla con SOAP",
+          "API e integraciones a medida",
+          "Auditoría completa con antes/después",
+          "Account manager dedicado"
+        ]
+      }
+    },
+    "addons": {
+      "title": "Add-ons opcionales",
+      "items": [
+        {
+          "name": "Almacenamiento extra",
+          "body": "Bloque de 50 GB adicionales para fotos y vídeos.",
+          "price": "9 €/mes"
+        },
+        {
+          "name": "WhatsApp Business",
+          "body": "Plantillas certificadas y mensajes salientes ilimitados.",
+          "price": "19 €/mes"
+        },
+        {
+          "name": "Migración asistida",
+          "body": "Pasamos tu Excel y tus contratos por ti, sin coste si vienes desde otro ERP.",
+          "price": "Gratis"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas sobre precios",
+      "items": [
+        {
+          "q": "¿Hay permanencia?",
+          "a": "No. Cancelas cuando quieras y conservas tus datos exportables."
+        },
+        {
+          "q": "¿Qué pasa si supero los límites de mi plan?",
+          "a": "Te avisamos antes de cobrar nada. Puedes subir de plan o quedarte donde estás (no bloqueamos funciones críticas sin avisar)."
+        },
+        {
+          "q": "¿Puedo cambiar de plan?",
+          "a": "En cualquier momento, ambos sentidos. Te prorrateamos lo cobrado."
+        },
+        {
+          "q": "¿Aceptáis transferencia o solo tarjeta?",
+          "a": "Tarjeta y SEPA. Para Kennel Pro también factura anual por transferencia."
+        },
+        {
+          "q": "¿La factura es deducible?",
+          "a": "Sí, emitimos factura con tu CIF/NIF. Es un gasto deducible para tu actividad."
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Aún tienes dudas?",
+      "body": "Te llamamos y respondemos en 10 minutos. Sin presión.",
+      "primary": "Reservar llamada",
+      "secondary": "Ver casos de éxito"
+    }
+  },
+  "about": {
+    "title": "Hecho con criadores. No con powerpoints.",
+    "subtitle": "Petwelly nace en un pasillo de criadero, no en una oficina con vistas.",
+    "story": {
+      "title": "Nuestra historia",
+      "body": "Empezamos ayudando a un criadero de pastor australiano a sacarse 9 hojas de Excel de encima. En tres meses recuperaron una hora al día y montamos lo siguiente con otros 12 criaderos. Hoy somos un equipo pequeño con un objetivo enorme: que la gestión deje de robaros tiempo a vosotros y se lo devuelva a los perros."
+    },
+    "values": {
+      "title": "Cómo trabajamos",
+      "items": [
+        {
+          "title": "Hablamos con criadores cada semana",
+          "body": "Cada feature pasa por al menos 3 criadores reales antes de existir."
+        },
+        {
+          "title": "No vendemos lo que no podemos cumplir",
+          "body": "Si una integración aún no está, te lo decimos antes de firmar."
+        },
+        {
+          "title": "Los datos son tuyos",
+          "body": "Exportas todo a CSV/PDF cuando quieras. Sin candados."
+        },
+        {
+          "title": "Soporte humano",
+          "body": "Te atiende alguien que sabe distinguir un displasia de una luxación."
+        }
+      ]
+    },
+    "team": {
+      "title": "El equipo",
+      "subtitle": "Pequeño, multidisciplinar y obsesionado con el detalle.",
+      "members": [
+        { "name": "Diego A.", "role": "CEO · Producto", "bio": "10 años montando software para nichos." },
+        { "name": "Sara M.", "role": "Customer Success", "bio": "Veterinaria. Habla con todos los criaderos." },
+        { "name": "Iván P.", "role": "Tech Lead", "bio": "Backend, infraestructura y APIs." },
+        { "name": "Noa T.", "role": "Diseño", "bio": "Convierte caos en pantallas claras." }
+      ]
+    },
+    "ctaFinal": {
+      "title": "¿Te apetece tomar un café virtual?",
+      "body": "Te enseñamos Petwelly con tu Excel real, sin guiones.",
+      "primary": "Reservar 20 minutos",
+      "secondary": "Ver precios"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Guías prácticas de gestión, salud y crecimiento para criaderos profesionales.",
+    "readMore": "Leer artículo",
+    "minRead": "min de lectura",
+    "publishedOn": "Publicado el",
+    "updatedOn": "Actualizado el",
+    "by": "Por",
+    "shareOn": "Compartir en",
+    "back": "← Volver al blog",
+    "related": "Artículos relacionados",
+    "noPosts": "Aún no hay artículos publicados en este idioma."
+  },
+  "caseStudies": {
+    "title": "Casos de éxito",
+    "subtitle": "Criaderos reales con cifras reales antes y después de Petwelly.",
+    "readCase": "Ver caso completo",
+    "metrics": {
+      "timeSaved": "Tiempo recuperado",
+      "salesUp": "Aumento de ventas",
+      "satisfaction": "Satisfacción cliente",
+      "litters": "Camadas/año"
+    },
+    "items": [
+      {
+        "slug": "estrella-polar",
+        "name": "Criadero Estrella Polar",
+        "breed": "Pastor australiano",
+        "location": "Madrid",
+        "summary": "De 3 hojas de Excel y 12 horas de admin a una sola pantalla y 2 horas al día.",
+        "metrics": {
+          "timeSaved": "10 h/sem",
+          "salesUp": "+22%",
+          "satisfaction": "4.9/5",
+          "litters": "6"
+        },
+        "quote": "He recuperado mis sábados y mis clientes me ven más profesional.",
+        "person": "Marta R.",
+        "role": "Propietaria"
+      },
+      {
+        "slug": "bulldog-del-valle",
+        "name": "Bulldog del Valle",
+        "breed": "Bulldog francés",
+        "location": "Barcelona",
+        "summary": "Portal del cliente y galería semanal: cero llamadas pidiendo fotos.",
+        "metrics": {
+          "timeSaved": "6 h/sem",
+          "salesUp": "+18%",
+          "satisfaction": "4.8/5",
+          "litters": "4"
+        },
+        "quote": "Mis clientes ven a sus cachorros crecer en directo. Es el factor diferencial.",
+        "person": "Jorge L.",
+        "role": "Propietario"
+      },
+      {
+        "slug": "cria-del-bosque",
+        "name": "Cría del Bosque",
+        "breed": "Mastín leonés",
+        "location": "Asturias",
+        "summary": "Whelping log y protocolos veterinarios: trazabilidad clínica completa.",
+        "metrics": {
+          "timeSaved": "8 h/sem",
+          "salesUp": "+15%",
+          "satisfaction": "5.0/5",
+          "litters": "3"
+        },
+        "quote": "El whelping log me salvó en mi último parto difícil. Tener el histórico fue oro.",
+        "person": "Lucía S.",
+        "role": "Propietaria"
+      }
+    ],
+    "ctaFinal": {
+      "title": "Tu criadero también puede contar su historia.",
+      "body": "Te ayudamos a montarlo en una semana.",
+      "primary": "Empezar prueba gratis",
+      "secondary": "Hablar con ventas"
+    }
+  },
+  "solutions": {
+    "title": "Soluciones por raza",
+    "subtitle": "Petwelly se configura solo según la raza que crías. Cada raza trae sus protocolos sanitarios, sus pruebas genéticas y sus tiempos.",
+    "ctaPrimary": "Probar gratis con mi raza",
+    "ctaSecondary": "Ver precios",
+    "intro": "Selecciona tu raza y te enseñamos qué cambia."
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Respondemos en menos de 4 horas en horario laboral.",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "kennel": "Nombre del criadero",
+      "kennelPlaceholder": "Criadero Estrella Polar",
+      "phone": "Teléfono",
+      "phonePlaceholder": "+34 600 000 000",
+      "subject": "Asunto",
+      "subjects": {
+        "demo": "Quiero ver una demo",
+        "sales": "Tengo dudas comerciales",
+        "support": "Necesito soporte",
+        "other": "Otro"
+      },
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntanos qué necesitas",
+      "consent": "Acepto la política de privacidad",
+      "submit": "Enviar mensaje",
+      "submitting": "Enviando…",
+      "successTitle": "¡Mensaje enviado!",
+      "successBody": "Te respondemos en menos de 4 horas en horario laboral.",
+      "errorTitle": "Algo falló al enviar",
+      "errorBody": "Vuelve a intentarlo o escríbenos a hola@petwelly.com."
+    },
+    "channels": {
+      "title": "Otros canales",
+      "items": [
+        { "label": "Email comercial", "value": "hola@petwelly.com" },
+        { "label": "Soporte", "value": "soporte@petwelly.com" },
+        { "label": "Teléfono", "value": "+34 900 000 000" },
+        { "label": "Horario", "value": "L–V · 9:00–18:00 (Madrid)" }
+      ]
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Política de privacidad",
+      "lastUpdate": "Última actualización: 1 de enero de 2026",
+      "intro": "En Petwelly tratamos tus datos personales con el cuidado que tratarías a tu camada. Esta política explica qué recogemos, por qué y cómo lo protegemos."
+    },
+    "terms": {
+      "title": "Términos y condiciones",
+      "lastUpdate": "Última actualización: 1 de enero de 2026",
+      "intro": "Estos términos rigen el uso de la plataforma Petwelly. Al crear una cuenta, aceptas estos términos."
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "lastUpdate": "Última actualización: 1 de enero de 2026",
+      "intro": "Usamos cookies imprescindibles y, con tu consentimiento, cookies analíticas. No usamos cookies publicitarias."
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "subtitle": "Mira, este enlace está más perdido que un cachorro en su primer paseo.",
+    "ctaPrimary": "Volver al inicio",
+    "ctaSecondary": "Ver funcionalidades"
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "seeAll": "Ver todo",
+    "comingSoon": "Próximamente",
+    "newBadge": "Nuevo",
+    "yes": "Sí",
+    "no": "No",
+    "skip": "Saltar al contenido"
+  }
+}

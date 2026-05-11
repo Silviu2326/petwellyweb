@@ -1,0 +1,618 @@
+{
+  "site": {
+    "name": "Petwelly",
+    "tagline": "The ERP your dogs deserve",
+    "description": "Petwelly is the ERP built for professional dog breeders: health, litters, sales, client portal and finance — all in one place."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "about": "Team",
+    "blog": "Blog",
+    "caseStudies": "Case studies",
+    "solutions": "Solutions",
+    "contact": "Contact",
+    "login": "Sign in",
+    "ctaFree": "Start for free",
+    "ctaTrial": "Start 14-day free trial",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "product": "Product",
+    "resources": "Resources",
+    "company": "Company",
+    "legal": "Legal",
+    "rights": "All rights reserved",
+    "madeWith": "Made with care in Spain",
+    "newsletter": {
+      "title": "Tips for your kennel, monthly",
+      "subtitle": "Management, health and real cases. No spam, ever.",
+      "placeholder": "you@email.com",
+      "submit": "Subscribe",
+      "privacy": "By subscribing you accept our privacy policy."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "ERP for professional kennels",
+      "titleStart": "The ERP your dogs",
+      "titleHighlight": "deserve",
+      "titleEnd": ".",
+      "subtitle": "Petwelly puts records, health, litters, sales and the client portal in one place. Built with real breeders, not powerpoint slides.",
+      "ctaPrimary": "Start 14-day free trial",
+      "ctaSecondary": "See features",
+      "trust": "No card required · Cancel anytime · Free migration",
+      "mockup": {
+        "kennel": "Green Forest",
+        "dogs": "12 dogs · 5 active reservations",
+        "salesUp": "+18% sales",
+        "today": "Today",
+        "month": "Month",
+        "vac": "Vacc. OK",
+        "list1": "Reservation confirmed · Anna Lopez",
+        "list2": "Vaccination due · Thor (6 days)",
+        "list3": "Whelping forecast · Mia (May 22)",
+        "saveLabel": "You save",
+        "saveValue": "8 h/week"
+      }
+    },
+    "logos": {
+      "title": "Trusted by breeders across Spain"
+    },
+    "features": {
+      "badge": "All in one",
+      "title": "Designed for modern kennels",
+      "subtitle": "Replace 6 tools (Excel, WhatsApp, Drive, calendar, forms, Stripe) with one.",
+      "items": {
+        "dog": {
+          "title": "Complete dog record",
+          "body": "Health, genetics, documents and history — fully traceable and shareable with vet or client."
+        },
+        "litter": {
+          "title": "Litters & whelping log",
+          "body": "Plan crosses, log the whelping live and manage puppy reservations without chaos."
+        },
+        "client": {
+          "title": "Client portal",
+          "body": "Clients see reservations, puppy photos and invoices. You write once."
+        },
+        "calendar": {
+          "title": "Unified calendar",
+          "body": "Vaccines, whelpings, deliveries, vet visits. One calendar per kennel."
+        },
+        "finance": {
+          "title": "Clear finance",
+          "body": "Income, expenses and invoices in one click. Real margin per litter and per dog."
+        },
+        "pipeline": {
+          "title": "Sales pipeline",
+          "body": "From inquiry to delivery: kanban with every prospect, none lost."
+        }
+      }
+    },
+    "stats": {
+      "title": "Why breeders switch to Petwelly",
+      "items": {
+        "time": { "value": "1.5–2 h", "label": "saved every day" },
+        "tools": { "value": "6 → 1", "label": "tools to a single app" },
+        "rating": { "value": "4.9/5", "label": "breeder satisfaction" },
+        "setup": { "value": "30 min", "label": "to onboard with your data" }
+      }
+    },
+    "workflow": {
+      "badge": "How it works",
+      "title": "From Excel and WhatsApp to a kennel that runs itself",
+      "subtitle": "Four steps to take back control of your day.",
+      "steps": {
+        "import": {
+          "title": "1 · Import what you already have",
+          "body": "Upload your CSV of dogs and clients. The wizard sets it up in 10 minutes."
+        },
+        "configure": {
+          "title": "2 · Configure once",
+          "body": "Contract templates, vet protocols, automatic notifications: define them once, applied forever."
+        },
+        "operate": {
+          "title": "3 · Operate in one click",
+          "body": "Every action (reservation, whelping, vaccine, invoice) connects to the rest with no copy-paste."
+        },
+        "grow": {
+          "title": "4 · Grow on real data",
+          "body": "See margin per litter, breed and client. Decide with numbers, not gut feel."
+        }
+      }
+    },
+    "testimonials": {
+      "badge": "4.9/5 from real breeders",
+      "title": "Breeders speak",
+      "items": [
+        {
+          "name": "Marta R.",
+          "role": "Estrella Polar Kennel · Madrid",
+          "text": "I went from 3 spreadsheets to one screen. I got my Saturdays back."
+        },
+        {
+          "name": "Jorge L.",
+          "role": "Bulldog del Valle · Barcelona",
+          "text": "My clients see their puppies grow. Zero calls asking for photos."
+        },
+        {
+          "name": "Lucia S.",
+          "role": "Cria del Bosque · Asturias",
+          "text": "The whelping log saved me on a difficult delivery. Having the history right there was gold."
+        }
+      ]
+    },
+    "faq": {
+      "badge": "Common questions",
+      "title": "What breeders ask us",
+      "items": [
+        {
+          "q": "Do I need technical knowledge?",
+          "a": "No. Petwelly is built for breeders, not for developers. The setup wizard configures everything in 30 minutes."
+        },
+        {
+          "q": "What if I already have everything in Excel?",
+          "a": "We import it for you. Upload your file and the system creates dogs, clients and reservations without typing."
+        },
+        {
+          "q": "Can I invite my vet?",
+          "a": "Yes. Grant access to the records they need and nothing else. If they're on staff, they get a dedicated panel."
+        },
+        {
+          "q": "What happens to my data if I cancel?",
+          "a": "It's yours. Export everything as CSV/PDF whenever you want. We never lock anything."
+        },
+        {
+          "q": "Does it work on mobile?",
+          "a": "Yes, fully responsive. Weigh a puppy or log a vaccine from the kennel right on your phone."
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "Ready to simplify your kennel?",
+      "body": "14 days free. No card. We migrate your data for you.",
+      "primary": "Create my account",
+      "secondary": "See pricing"
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Everything a professional kennel needs, without the bloat of a generic ERP.",
+    "intro": "Every module talks to the others: a vaccine deducts inventory, a reservation triggers shipping, a whelping updates the litter and creates puppy records.",
+    "groups": {
+      "dogs": {
+        "title": "Dog record",
+        "description": "Clinical, genetic and reproductive file for every dog in one screen.",
+        "items": [
+          "Summary, microchip, weight and status (available/reserved/sold)",
+          "Unified medical history in chronological order",
+          "Genetics: DM, PRA, MDR1, hip dysplasia, full panel",
+          "Visual pedigree with risky-cross alerts",
+          "Weight history with weekly chart",
+          "Photo gallery with featured shot for catalog",
+          "Health booklet PDF generated in one click"
+        ]
+      },
+      "litters": {
+        "title": "Litters & breeding",
+        "description": "From heat to puppy delivery: automatic milestones and pre-natal reservations.",
+        "items": [
+          "States: planned → confirmed → born → weaned → delivered",
+          "Auto milestones: mating, ovulation, ultrasound, whelping, weaning",
+          "Weekly neonatal weighing with survival chart",
+          "Pre-birth puppy reservations with waiting list",
+          "External stud with pedigree and owner info",
+          "Auto contracts on weaning from template",
+          "Fertility report per dam (cycle interval, survival)"
+        ]
+      },
+      "health": {
+        "title": "Veterinary health",
+        "description": "Calendar, digital prescriptions and SOAP notes. The vet works inside Petwelly.",
+        "items": [
+          "Vet calendar by week / month / quarter",
+          "Pre-configured protocols by breed and age",
+          "Health booklet PDF generated on the spot",
+          "Risky-cross alert for two carriers",
+          "Digital prescription with dose, duration and posology",
+          "Treatment tracking with adherence",
+          "Genetic tests integrated in the pedigree tree"
+        ]
+      },
+      "clients": {
+        "title": "Clients",
+        "description": "Kanban pipeline with the full client history in a single thread.",
+        "items": [
+          "Kanban: lead → contacted → interested → reservation → client",
+          "Communication log: in-app + WhatsApp + email",
+          "CSV importer for your existing base",
+          "Lifetime value, dogs purchased, last purchase date",
+          "Auto reminders (birthdays, 6-month checkup)"
+        ]
+      },
+      "reservations": {
+        "title": "Reservations",
+        "description": "Contract, signature and delivery checklist without Word or printer.",
+        "items": [
+          "PDF contract from template with one-click signature",
+          "Delivery checklist: booklet, pedigree, kit, contract, payment",
+          "Auto notifications when status changes",
+          "Reminder one week before delivery",
+          "Partial payments with visible progress bar"
+        ]
+      },
+      "finance": {
+        "title": "Finance & inventory",
+        "description": "Real margin to the cent and stock that deducts itself.",
+        "items": [
+          "Quotes that become invoices in one click",
+          "Report per dog and per litter (cost vs income)",
+          "Configurable VAT and multi-rate",
+          "Inventory auto-deduction on vaccines or sales",
+          "Lots with expiration for vaccines and meds",
+          "Suppliers with price history",
+          "Overdue invoices badge in the menu"
+        ]
+      },
+      "shipping": {
+        "title": "Shipping & logistics",
+        "description": "SEUR, Correos and MRW connected. Automatic tracking and delivery note.",
+        "items": [
+          "Auto tracking with SEUR, Correos and MRW",
+          "Structured addresses ready for labels",
+          "Delivery confirmation with photo and signature",
+          "Delivery note PDF generated on the spot",
+          "Travel papers and CITES if applicable"
+        ]
+      },
+      "portal": {
+        "title": "Client portal",
+        "description": "Your client watches the puppy grow and pays online without you.",
+        "items": [
+          "Guided onboarding the first time",
+          "Visible health booklet of the puppy",
+          "Weekly follow-up gallery from birth",
+          "Real-time shipping tracking",
+          "Document upload (ID, payment, contract)",
+          "Direct chat with templates and attachments"
+        ]
+      },
+      "site": {
+        "title": "Your public website (microsite)",
+        "description": "Every kennel gets a self-generated microsite, SEO-ready.",
+        "items": [
+          "Drag & drop block system, fully customizable",
+          "Dog catalog with featured photo and gallery",
+          "«Reserve this puppy» button straight to your CRM",
+          "Floating WhatsApp with pre-filled message",
+          "Public calendar of upcoming litters",
+          "Schema.org structured data for Google"
+        ]
+      }
+    },
+    "ctaFinal": {
+      "title": "There are 17 more areas. Want a 20-min demo of yours?",
+      "body": "We tailor the demo to what you actually do, no commitment.",
+      "primary": "Book a demo",
+      "secondary": "See pricing"
+    }
+  },
+  "pricing": {
+    "title": "Simple pricing for real breeders",
+    "subtitle": "No lock-in, no per-user surcharges. Start free for 14 days.",
+    "monthly": "Monthly",
+    "yearly": "Annual",
+    "yearlyDiscount": "−20%",
+    "perMonth": "/mo",
+    "billedYearly": "billed annually",
+    "billedMonthly": "billed monthly",
+    "popular": "Most chosen",
+    "ctaTrial": "Start trial",
+    "ctaContact": "Talk to sales",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "tagline": "For new kennels",
+        "monthly": 29,
+        "yearly": 23,
+        "features": [
+          "Up to 15 active dogs",
+          "Up to 50 clients",
+          "1 user",
+          "Records, health and litters",
+          "Basic microsite",
+          "Email support"
+        ]
+      },
+      "breeder": {
+        "name": "Breeder+",
+        "tagline": "Most popular",
+        "monthly": 79,
+        "yearly": 63,
+        "features": [
+          "Unlimited dogs and clients",
+          "5 users included",
+          "Everything in Starter +",
+          "Full client portal",
+          "Sales pipeline and kanban",
+          "Inventory with lots and expiry",
+          "Advanced microsite with blocks",
+          "SEUR/Correos/MRW integrations",
+          "Priority support (chat + email)"
+        ]
+      },
+      "kennel": {
+        "name": "Kennel Pro",
+        "tagline": "For large multi-site kennels",
+        "monthly": 149,
+        "yearly": 119,
+        "features": [
+          "Everything in Breeder+ +",
+          "Unlimited users",
+          "Multi-kennel / multi-brand",
+          "Granular roles and permissions",
+          "Staff vet with SOAP notes",
+          "API and custom integrations",
+          "Full audit log with before/after",
+          "Dedicated account manager"
+        ]
+      }
+    },
+    "addons": {
+      "title": "Optional add-ons",
+      "items": [
+        {
+          "name": "Extra storage",
+          "body": "Additional 50 GB block for photos and videos.",
+          "price": "€9/mo"
+        },
+        {
+          "name": "WhatsApp Business",
+          "body": "Certified templates and unlimited outbound messages.",
+          "price": "€19/mo"
+        },
+        {
+          "name": "Assisted migration",
+          "body": "We move your spreadsheets and contracts. Free if migrating from another ERP.",
+          "price": "Free"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Pricing questions",
+      "items": [
+        {
+          "q": "Is there a lock-in period?",
+          "a": "No. Cancel anytime, keep your exportable data."
+        },
+        {
+          "q": "What if I exceed my plan limits?",
+          "a": "We notify you before charging anything. Upgrade or stay (we don't silently disable critical features)."
+        },
+        {
+          "q": "Can I switch plans?",
+          "a": "Anytime, both ways. We pro-rate the billing."
+        },
+        {
+          "q": "Do you accept bank transfer?",
+          "a": "Card and SEPA. For Kennel Pro, annual invoice by transfer is also available."
+        },
+        {
+          "q": "Is the invoice tax-deductible?",
+          "a": "Yes, we invoice with your VAT/CIF — fully deductible for your business."
+        }
+      ]
+    },
+    "ctaFinal": {
+      "title": "Still have doubts?",
+      "body": "We'll call you and answer in 10 minutes. No pressure.",
+      "primary": "Book a call",
+      "secondary": "See case studies"
+    }
+  },
+  "about": {
+    "title": "Built with breeders. Not with powerpoints.",
+    "subtitle": "Petwelly was born in a kennel hallway, not in a corner office.",
+    "story": {
+      "title": "Our story",
+      "body": "We started by helping an Australian Shepherd kennel get rid of 9 spreadsheets. In three months they recovered an hour a day. We built the rest with 12 more kennels. Today we're a small team with a big goal: stop management from stealing your time so you can give it back to your dogs."
+    },
+    "values": {
+      "title": "How we work",
+      "items": [
+        {
+          "title": "We talk to breeders weekly",
+          "body": "Every feature ships only after at least 3 real breeders validated it."
+        },
+        {
+          "title": "We don't sell what we can't deliver",
+          "body": "If an integration isn't ready yet, we tell you before you sign."
+        },
+        {
+          "title": "Your data is yours",
+          "body": "Export everything to CSV/PDF anytime. No locks."
+        },
+        {
+          "title": "Human support",
+          "body": "Talk to someone who knows a dysplasia from a luxation."
+        }
+      ]
+    },
+    "team": {
+      "title": "The team",
+      "subtitle": "Small, multidisciplinary and obsessed with detail.",
+      "members": [
+        { "name": "Diego A.", "role": "CEO · Product", "bio": "10 years building niche software." },
+        { "name": "Sara M.", "role": "Customer Success", "bio": "Veterinarian. Talks to every kennel." },
+        { "name": "Ivan P.", "role": "Tech Lead", "bio": "Backend, infra and APIs." },
+        { "name": "Noa T.", "role": "Design", "bio": "Turns chaos into clear screens." }
+      ]
+    },
+    "ctaFinal": {
+      "title": "Fancy a virtual coffee?",
+      "body": "We'll show you Petwelly with your real spreadsheet, no scripts.",
+      "primary": "Book 20 minutes",
+      "secondary": "See pricing"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Practical guides on management, health and growth for professional kennels.",
+    "readMore": "Read article",
+    "minRead": "min read",
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on",
+    "by": "By",
+    "shareOn": "Share on",
+    "back": "← Back to blog",
+    "related": "Related articles",
+    "noPosts": "No articles published yet in this language."
+  },
+  "caseStudies": {
+    "title": "Case studies",
+    "subtitle": "Real kennels with real numbers, before and after Petwelly.",
+    "readCase": "Read full case",
+    "metrics": {
+      "timeSaved": "Time saved",
+      "salesUp": "Sales increase",
+      "satisfaction": "Customer satisfaction",
+      "litters": "Litters/year"
+    },
+    "items": [
+      {
+        "slug": "estrella-polar",
+        "name": "Estrella Polar Kennel",
+        "breed": "Australian Shepherd",
+        "location": "Madrid",
+        "summary": "From 3 spreadsheets and 12 admin hours to one screen and 2 hours a day.",
+        "metrics": {
+          "timeSaved": "10 h/wk",
+          "salesUp": "+22%",
+          "satisfaction": "4.9/5",
+          "litters": "6"
+        },
+        "quote": "I got my Saturdays back and my clients see me as more professional.",
+        "person": "Marta R.",
+        "role": "Owner"
+      },
+      {
+        "slug": "bulldog-del-valle",
+        "name": "Bulldog del Valle",
+        "breed": "French Bulldog",
+        "location": "Barcelona",
+        "summary": "Client portal and weekly gallery: zero calls asking for photos.",
+        "metrics": {
+          "timeSaved": "6 h/wk",
+          "salesUp": "+18%",
+          "satisfaction": "4.8/5",
+          "litters": "4"
+        },
+        "quote": "My clients see their puppies grow live. That's the real differentiator.",
+        "person": "Jorge L.",
+        "role": "Owner"
+      },
+      {
+        "slug": "cria-del-bosque",
+        "name": "Cria del Bosque",
+        "breed": "Spanish Mastiff",
+        "location": "Asturias",
+        "summary": "Whelping log and vet protocols: complete clinical traceability.",
+        "metrics": {
+          "timeSaved": "8 h/wk",
+          "salesUp": "+15%",
+          "satisfaction": "5.0/5",
+          "litters": "3"
+        },
+        "quote": "The whelping log saved me on a difficult delivery. The history was gold.",
+        "person": "Lucia S.",
+        "role": "Owner"
+      }
+    ],
+    "ctaFinal": {
+      "title": "Your kennel can tell its story too.",
+      "body": "We help you set it up in a week.",
+      "primary": "Start free trial",
+      "secondary": "Talk to sales"
+    }
+  },
+  "solutions": {
+    "title": "Solutions by breed",
+    "subtitle": "Petwelly self-configures for the breed you raise. Each breed brings its own health protocols, genetic tests and timelines.",
+    "ctaPrimary": "Try free with my breed",
+    "ctaSecondary": "See pricing",
+    "intro": "Pick your breed and we show you what changes."
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "We answer in less than 4 hours during business hours.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@email.com",
+      "kennel": "Kennel name",
+      "kennelPlaceholder": "Estrella Polar Kennel",
+      "phone": "Phone",
+      "phonePlaceholder": "+34 600 000 000",
+      "subject": "Subject",
+      "subjects": {
+        "demo": "I want a demo",
+        "sales": "Sales questions",
+        "support": "I need support",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Tell us what you need",
+      "consent": "I accept the privacy policy",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "successTitle": "Message sent!",
+      "successBody": "We'll reply within 4 hours during business hours.",
+      "errorTitle": "Sending failed",
+      "errorBody": "Please try again or email us at hello@petwelly.com."
+    },
+    "channels": {
+      "title": "Other channels",
+      "items": [
+        { "label": "Sales email", "value": "hello@petwelly.com" },
+        { "label": "Support", "value": "support@petwelly.com" },
+        { "label": "Phone", "value": "+34 900 000 000" },
+        { "label": "Hours", "value": "Mon–Fri · 9:00–18:00 (Madrid)" }
+      ]
+    }
+  },
+  "legal": {
+    "privacy": {
+      "title": "Privacy policy",
+      "lastUpdate": "Last update: January 1, 2026",
+      "intro": "At Petwelly we treat your personal data with the same care you'd give a litter. This policy explains what we collect, why and how we protect it."
+    },
+    "terms": {
+      "title": "Terms and conditions",
+      "lastUpdate": "Last update: January 1, 2026",
+      "intro": "These terms govern your use of the Petwelly platform. By creating an account you accept them."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "lastUpdate": "Last update: January 1, 2026",
+      "intro": "We use essential cookies and, with your consent, analytics cookies. We do not use advertising cookies."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "This link is more lost than a puppy on its first walk.",
+    "ctaPrimary": "Back to home",
+    "ctaSecondary": "See features"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "seeAll": "See all",
+    "comingSoon": "Coming soon",
+    "newBadge": "New",
+    "yes": "Yes",
+    "no": "No",
+    "skip": "Skip to content"
+  }
+}

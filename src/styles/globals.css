@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-ink font-sans antialiased;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  /* Scroll-margin para anclas (evita que el header sticky tape el destino) */
+  :target {
+    scroll-margin-top: 5rem;
+  }
+
+  ::selection {
+    @apply bg-primary-lighter text-primary-dark;
+  }
+
+  /* Tipografía base */
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+
+  h1 { @apply text-4xl sm:text-5xl lg:text-6xl font-extrabold; }
+  h2 { @apply text-3xl sm:text-4xl font-extrabold; }
+  h3 { @apply text-xl sm:text-2xl font-bold; }
+  h4 { @apply text-lg font-bold; }
+
+  /* Focus accesible global */
+  :focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background rounded-md;
+  }
+}
+
+@layer components {
+  /* Prose para artículos del blog (sin plugin oficial, ligero) */
+  .prose-petwelly {
+    @apply text-ink leading-relaxed;
+  }
+  .prose-petwelly h2 {
+    @apply mt-12 mb-4;
+  }
+  .prose-petwelly h3 {
+    @apply mt-8 mb-3;
+  }
+  .prose-petwelly p {
+    @apply my-5 text-ink-secondary text-base sm:text-lg;
+  }
+  .prose-petwelly a {
+    @apply text-primary underline underline-offset-2 hover:text-primary-dark;
+  }
+  .prose-petwelly ul {
+    @apply list-disc pl-6 my-5 space-y-2 text-ink-secondary;
+  }
+  .prose-petwelly ol {
+    @apply list-decimal pl-6 my-5 space-y-2 text-ink-secondary;
+  }
+  .prose-petwelly blockquote {
+    @apply border-l-4 border-primary pl-5 my-6 italic text-ink-secondary;
+  }
+  .prose-petwelly code {
+    @apply bg-background-secondary text-primary-dark px-1.5 py-0.5 rounded text-sm;
+  }
+  .prose-petwelly pre {
+    @apply bg-ink text-surface p-4 rounded-2xl overflow-x-auto my-6 text-sm;
+  }
+  .prose-petwelly img {
+    @apply rounded-2xl my-8 shadow-card;
+  }
+  .prose-petwelly table {
+    @apply w-full text-sm my-6 border border-line-light rounded-xl overflow-hidden;
+  }
+  .prose-petwelly th {
+    @apply bg-background-secondary text-left p-3 font-bold text-ink;
+  }
+  .prose-petwelly td {
+    @apply p-3 border-t border-line-light text-ink-secondary;
+  }
+  .prose-petwelly hr {
+    @apply my-12 border-line-light;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+
+  .mask-fade-bottom {
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+  }
+}
+
+/* Reduce motion accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
