@@ -111,7 +111,7 @@ function TermsEN() {
       <h2>4. Acceptable use</h2>
       <ul>
         <li>Do not use the service for unlawful activities.</li>
-        <li>Do not attempt to access other kennels' data.</li>
+        <li>Do not attempt to access other kennels&apos; data.</li>
         <li>Do not resell access without authorization.</li>
       </ul>
       <h2>5. Intellectual property</h2>

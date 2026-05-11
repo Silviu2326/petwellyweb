@@ -107,7 +107,7 @@ function CookiesEN() {
       <h2>How to manage them</h2>
       <p>
         You can disable cookies in your browser settings. Analytics cookies are anonymous and
-        aggregated — we don't collect personal data with them.
+        aggregated — we don&apos;t collect personal data with them.
       </p>
     </>
   );

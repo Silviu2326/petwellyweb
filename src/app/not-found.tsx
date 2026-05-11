@@ -23,7 +23,7 @@ export default function RootNotFound() {
           <div className="b">404</div>
           <h1>Página no encontrada · Page not found</h1>
           <p>
-            Lo sentimos, no encontramos lo que buscabas. — Sorry, we couldn't find what you were
+            Lo sentimos, no encontramos lo que buscabas. — Sorry, we couldn&apos;t find what you were
             looking for.
           </p>
           <a href="/es">Volver al inicio</a>
