@@ -315,8 +315,8 @@
       "starter": {
         "name": "Starter",
         "tagline": "Para criaderos que arrancan",
-        "monthly": 29,
-        "yearly": 23,
+        "monthly": "29",
+        "yearly": "23",
         "features": [
           "Hasta 15 perros activos",
           "Hasta 50 clientes",
@@ -329,8 +329,8 @@
       "breeder": {
         "name": "Breeder+",
         "tagline": "Lo que la mayoría elige",
-        "monthly": 79,
-        "yearly": 63,
+        "monthly": "79",
+        "yearly": "63",
         "features": [
           "Perros y clientes ilimitados",
           "5 usuarios incluidos",
@@ -346,8 +346,8 @@
       "kennel": {
         "name": "Kennel Pro",
         "tagline": "Para criaderos grandes y multi-localización",
-        "monthly": 149,
-        "yearly": 119,
+        "monthly": "149",
+        "yearly": "119",
         "features": [
           "Todo lo de Breeder+ +",
           "Usuarios ilimitados",
