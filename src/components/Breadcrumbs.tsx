@@ -34,6 +34,7 @@ export function Breadcrumbs({ items, locale }: BreadcrumbsProps) {
               {i > 0 && <ChevronRight size={12} aria-hidden className="text-ink-muted" />}
               {item.href && i < items.length - 1 ? (
                 <Link
+                  // @ts-expect-error item.href is string, next-intl Link expects a typed pathname union
                   href={item.href}
                   className="hover:text-primary transition-colors"
                 >

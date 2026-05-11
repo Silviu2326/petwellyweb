@@ -32,6 +32,7 @@ export function LocaleSwitcher({ compact = false }: { compact?: boolean }) {
     if (target === locale) return setOpen(false);
     startTransition(() => {
       router.replace(
+        // @ts-expect-error pathname from usePathname is a string, router.replace expects a typed pathname union
         { pathname, params },
         { locale: target },
       );
