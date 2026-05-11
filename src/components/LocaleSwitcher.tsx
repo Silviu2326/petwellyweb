@@ -32,7 +32,6 @@ export function LocaleSwitcher({ compact = false }: { compact?: boolean }) {
     if (target === locale) return setOpen(false);
     startTransition(() => {
       router.replace(
-        // @ts-expect-error pathname types from next-intl
         { pathname, params },
         { locale: target },
       );

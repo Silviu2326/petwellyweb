@@ -85,7 +85,6 @@ export default async function CaseStudiesIndexPage({
                     ))}
                   </div>
                   <Link
-                    // @ts-expect-error pathnames typed
                     href={{ pathname: '/case-studies/[slug]', params: { slug: cs.slug } }}
                     className="mt-5 inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:gap-2 transition-all"
                   >

@@ -66,7 +66,6 @@ export default async function SolutionsIndexPage({
             return (
               <Link
                 key={b.slug}
-                // @ts-expect-error pathnames typed
                 href={{ pathname: '/solutions/[breed]', params: { breed: b.slug } }}
                 className="group"
               >

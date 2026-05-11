@@ -39,7 +39,6 @@ export function BlogCard({
   return (
     <Card padding="none" className="overflow-hidden hover:shadow-cardHover transition-all group h-full flex flex-col">
       <Link
-        // @ts-expect-error pathnames typed
         href={{ pathname: '/blog/[slug]', params: { slug } }}
         className="block"
       >
@@ -63,7 +62,6 @@ export function BlogCard({
           {featured && <Badge variant="warning" className="text-2xs">★</Badge>}
         </div>
         <Link
-          // @ts-expect-error pathnames typed
           href={{ pathname: '/blog/[slug]', params: { slug } }}
           className="block"
         >
@@ -84,7 +82,6 @@ export function BlogCard({
             </span>
           </div>
           <Link
-            // @ts-expect-error pathnames typed
             href={{ pathname: '/blog/[slug]', params: { slug } }}
             className="inline-flex items-center gap-1 text-primary font-semibold hover:gap-1.5 transition-all"
             aria-label={`${readMoreLabel}: ${title}`}
