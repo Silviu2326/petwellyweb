@@ -99,7 +99,7 @@ export default async function HomePage({
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a
-                  href={`${siteConfig.appUrl}/register`}
+                  href={siteConfig.appUrl}
                   className="h-12 px-6 inline-flex items-center justify-center gap-2 rounded-xl bg-primary text-white text-sm font-semibold shadow-sm hover:bg-primary-dark transition-colors"
                 >
                   {t('hero.ctaPrimary')} <ArrowRight size={16} aria-hidden />
@@ -260,7 +260,7 @@ export default async function HomePage({
         <CTASection
           title={t('ctaFinal.title')}
           body={t('ctaFinal.body')}
-          primary={{ label: t('ctaFinal.primary'), external: `${siteConfig.appUrl}/register` }}
+          primary={{ label: t('ctaFinal.primary'), external: siteConfig.appUrl }}
           secondary={{ label: t('ctaFinal.secondary'), href: '/pricing' }}
         />
       </Section>

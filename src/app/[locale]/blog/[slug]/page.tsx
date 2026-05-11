@@ -180,7 +180,7 @@ export default async function BlogPostPage({
           }
           primary={{
             label: locale === 'es' ? 'Empezar gratis' : 'Start for free',
-            external: `${siteConfig.appUrl}/register`,
+            external: siteConfig.appUrl,
           }}
           secondary={{
             label: t('back'),

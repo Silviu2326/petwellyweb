@@ -150,7 +150,7 @@ export default async function FeaturesPage({
         <CTASection
           title={t('ctaFinal.title')}
           body={t('ctaFinal.body')}
-          primary={{ label: t('ctaFinal.primary'), external: `${siteConfig.appUrl}/register` }}
+          primary={{ label: t('ctaFinal.primary'), external: siteConfig.appUrl }}
           secondary={{ label: t('ctaFinal.secondary'), href: '/pricing' }}
         />
       </Section>

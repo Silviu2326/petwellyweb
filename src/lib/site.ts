@@ -21,7 +21,7 @@ export const siteConfig = {
   descriptionEn:
     'Professional ERP for dog kennels: health, litters, sales, client portal and finance in one place.',
   url: clean(process.env.NEXT_PUBLIC_SITE_URL, fallbackSiteUrl),
-  appUrl: clean(process.env.NEXT_PUBLIC_APP_URL, 'https://app.petwelly.com'),
+  appUrl: clean(process.env.NEXT_PUBLIC_APP_URL, 'https://app.petwellly.com'),
   contactEndpoint: process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '',
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '34600000000',
   gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION || '',

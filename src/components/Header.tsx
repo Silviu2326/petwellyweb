@@ -53,13 +53,13 @@ export function Header() {
         <div className="flex items-center gap-1.5 sm:gap-2">
           <LocaleSwitcher compact />
           <a
-            href={`${siteConfig.appUrl}/login`}
+            href={siteConfig.appUrl}
             className="hidden sm:inline-flex items-center h-9 px-3 text-sm font-semibold text-ink-secondary hover:text-ink rounded-lg"
           >
             {t('login')}
           </a>
           <a
-            href={`${siteConfig.appUrl}/register`}
+            href={siteConfig.appUrl}
             className="hidden sm:inline-flex items-center justify-center gap-1.5 h-9 px-3.5 rounded-xl text-sm font-semibold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
           >
             {t('ctaFree')}
@@ -121,13 +121,13 @@ export function Header() {
             </nav>
             <div className="mt-6 pt-6 border-t border-line-light flex flex-col gap-3">
               <a
-                href={`${siteConfig.appUrl}/login`}
+                href={siteConfig.appUrl}
                 className="h-11 inline-flex items-center justify-center px-5 rounded-xl text-sm font-semibold text-ink border border-line"
               >
                 {t('login')}
               </a>
               <a
-                href={`${siteConfig.appUrl}/register`}
+                href={siteConfig.appUrl}
                 className="h-11 inline-flex items-center justify-center gap-2 px-5 rounded-xl text-sm font-semibold bg-primary text-white shadow-sm hover:bg-primary-dark"
               >
                 {t('ctaFree')}

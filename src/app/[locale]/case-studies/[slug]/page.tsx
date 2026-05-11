@@ -137,7 +137,7 @@ export default async function CaseStudyPage({
         <CTASection
           title={tCS('ctaFinal.title')}
           body={tCS('ctaFinal.body')}
-          primary={{ label: tCS('ctaFinal.primary'), external: `${siteConfig.appUrl}/register` }}
+          primary={{ label: tCS('ctaFinal.primary'), external: siteConfig.appUrl }}
           secondary={{ label: tCS('ctaFinal.secondary'), href: '/contact' }}
         />
       </Section>

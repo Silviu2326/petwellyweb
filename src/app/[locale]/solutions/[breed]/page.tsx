@@ -157,7 +157,7 @@ export default async function BreedSolutionPage({
               : `Petwelly comes pre-configured for ${c.name}`
           }
           body={tSol('subtitle')}
-          primary={{ label: tSol('ctaPrimary'), external: `${siteConfig.appUrl}/register` }}
+          primary={{ label: tSol('ctaPrimary'), external: siteConfig.appUrl }}
           secondary={{ label: tSol('ctaSecondary'), href: '/pricing' }}
         />
       </Section>

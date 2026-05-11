@@ -80,7 +80,7 @@ export function Footer({ locale }: { locale: 'es' | 'en' }) {
               ))}
               <li>
                 <a
-                  href={`${siteConfig.appUrl}/login`}
+                  href={siteConfig.appUrl}
                   className="text-sm text-ink-secondary hover:text-primary"
                 >
                   {tNav('login')}

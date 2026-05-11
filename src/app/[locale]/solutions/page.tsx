@@ -97,7 +97,7 @@ export default async function SolutionsIndexPage({
         <CTASection
           title={t('ctaPrimary')}
           body={t('subtitle')}
-          primary={{ label: t('ctaPrimary'), external: `${siteConfig.appUrl}/register` }}
+          primary={{ label: t('ctaPrimary'), external: siteConfig.appUrl }}
           secondary={{ label: t('ctaSecondary'), href: '/pricing' }}
         />
       </Section>

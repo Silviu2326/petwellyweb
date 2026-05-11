@@ -100,7 +100,7 @@ function PlanCard({
       </p>
 
       <a
-        href={`${siteConfig.appUrl}/register?plan=${planKey}`}
+        href={`${siteConfig.appUrl}?plan=${planKey}`}
         className={cn(
           'mt-7 h-12 inline-flex items-center justify-center px-5 rounded-xl text-sm font-semibold transition-colors',
           isPopular
