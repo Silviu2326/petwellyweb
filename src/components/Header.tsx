@@ -44,72 +44,74 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-line-light">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={siteConfig.name}>
-          <img
-            src="/logo.png"
-            alt=""
-            width={36}
-            height={36}
-            className="h-9 w-9 shrink-0"
-          />
-          <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
-        </Link>
+    <>
+      <header className="sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-line-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={siteConfig.name}>
+            <img
+              src="/logo.png"
+              alt=""
+              width={36}
+              height={36}
+              className="h-9 w-9 shrink-0"
+            />
+            <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
+          </Link>
 
-        <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">
-          {NAV_ITEMS.map((item) => {
-            const active = pathname === item.href;
-            return (
-              <Link
-                key={item.key}
-                href={item.href}
-                className={cn(
-                  'text-sm font-semibold transition-colors',
-                  active ? 'text-primary' : 'text-ink-secondary hover:text-ink',
-                )}
-              >
-                {t(item.key)}
-              </Link>
-            );
-          })}
-        </nav>
+          <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">
+            {NAV_ITEMS.map((item) => {
+              const active = pathname === item.href;
+              return (
+                <Link
+                  key={item.key}
+                  href={item.href}
+                  className={cn(
+                    'text-sm font-semibold transition-colors',
+                    active ? 'text-primary' : 'text-ink-secondary hover:text-ink',
+                  )}
+                >
+                  {t(item.key)}
+                </Link>
+              );
+            })}
+          </nav>
 
-        <div className="flex items-center gap-1.5 sm:gap-2">
-          <LocaleSwitcher compact />
-          <a
-            href={siteConfig.appUrl}
-            className="hidden sm:inline-flex items-center h-9 px-3 text-sm font-semibold text-ink-secondary hover:text-ink rounded-lg"
-          >
-            {t('login')}
-          </a>
-          <a
-            href={siteConfig.demoUrl}
-            className="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-xl text-sm font-semibold text-primary border border-primary/30 hover:bg-primary-lighter transition-colors"
-          >
-            <Eye size={14} aria-hidden />
-            {t('viewDemo')}
-          </a>
-          <a
-            href={siteConfig.appUrl}
-            className="hidden sm:inline-flex items-center justify-center gap-1.5 h-9 px-3.5 rounded-xl text-sm font-semibold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
-          >
-            {t('ctaFree')}
-            <ArrowRight size={14} aria-hidden />
-          </a>
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="lg:hidden h-9 w-9 inline-flex items-center justify-center rounded-lg text-ink hover:bg-background-secondary"
-            aria-label={t('openMenu')}
-          >
-            <Menu size={20} aria-hidden />
-          </button>
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            <LocaleSwitcher compact />
+            <a
+              href={siteConfig.appUrl}
+              className="hidden sm:inline-flex items-center h-9 px-3 text-sm font-semibold text-ink-secondary hover:text-ink rounded-lg"
+            >
+              {t('login')}
+            </a>
+            <a
+              href={siteConfig.demoUrl}
+              className="hidden md:inline-flex items-center justify-center gap-1.5 h-9 px-3 rounded-xl text-sm font-semibold text-primary border border-primary/30 hover:bg-primary-lighter transition-colors"
+            >
+              <Eye size={14} aria-hidden />
+              {t('viewDemo')}
+            </a>
+            <a
+              href={siteConfig.appUrl}
+              className="hidden sm:inline-flex items-center justify-center gap-1.5 h-9 px-3.5 rounded-xl text-sm font-semibold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
+            >
+              {t('ctaFree')}
+              <ArrowRight size={14} aria-hidden />
+            </a>
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              className="lg:hidden h-9 w-9 inline-flex items-center justify-center rounded-lg text-ink hover:bg-background-secondary"
+              aria-label={t('openMenu')}
+            >
+              <Menu size={20} aria-hidden />
+            </button>
+          </div>
         </div>
-      </div>
+      </header>
 
       {open && (
-        <div className="fixed inset-0 z-50 lg:hidden">
+        <div className="fixed inset-0 z-[100] lg:hidden">
           <div
             className="absolute inset-0 bg-ink/40 backdrop-blur-sm"
             onClick={() => setOpen(false)}
@@ -186,6 +188,6 @@ export function Header() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
