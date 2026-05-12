@@ -38,7 +38,7 @@ export const siteConfig = {
   /** Entry público al modo demo del ERP (sesión fake, escrituras bloqueadas). */
   demoUrl: `${appUrl}/demo`,
   contactEndpoint: process.env.NEXT_PUBLIC_CONTACT_ENDPOINT || '',
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '34600000000',
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP || '34683529629',
   gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION || '',
   plausibleDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || '',
   email: {
