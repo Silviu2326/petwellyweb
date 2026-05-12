@@ -44,19 +44,7 @@
       "ctaPrimary": "Empezar gratis 14 días",
       "ctaSecondary": "Ver funcionalidades",
       "trust": "Sin tarjeta · Cancela cuando quieras · Migración gratis",
-      "mockup": {
-        "kennel": "Bosque Verde",
-        "dogs": "12 perros · 5 reservas activas",
-        "salesUp": "+18% ventas",
-        "today": "Hoy",
-        "month": "Mes",
-        "vac": "Vac. OK",
-        "list1": "Reserva confirmada · Ana López",
-        "list2": "Vacuna pendiente · Thor (6 días)",
-        "list3": "Parto previsto · Mía (22 may)",
-        "saveLabel": "Ahorra",
-        "saveValue": "8 h/sem"
-      }
+      "imageAlt": "Panel de Petwellly mostrando perros, camadas, reservas, recordatorios y app móvil"
     },
     "logos": {
       "title": "Confían en Petwellly criaderos de toda España"
@@ -572,13 +560,13 @@
       "successTitle": "¡Mensaje enviado!",
       "successBody": "Te respondemos en menos de 4 horas en horario laboral.",
       "errorTitle": "Algo falló al enviar",
-      "errorBody": "Vuelve a intentarlo o escríbenos a hola@petwelly.com."
+      "errorBody": "Vuelve a intentarlo o escríbenos a hola@petwellly.com."
     },
     "channels": {
       "title": "Otros canales",
       "items": [
-        { "label": "Email comercial", "value": "hola@petwelly.com" },
-        { "label": "Soporte", "value": "soporte@petwelly.com" },
+        { "label": "Email comercial", "value": "hola@petwellly.com" },
+        { "label": "Soporte", "value": "soporte@petwellly.com" },
         { "label": "Teléfono", "value": "+34 900 000 000" },
         { "label": "Horario", "value": "L–V · 9:00–18:00 (Madrid)" }
       ]

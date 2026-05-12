@@ -11,7 +11,7 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       { protocol: 'https', hostname: 'images.unsplash.com' },
-      { protocol: 'https', hostname: 'cdn.petwelly.com' },
+      { protocol: 'https', hostname: 'cdn.petwellly.com' },
     ],
   },
   async headers() {

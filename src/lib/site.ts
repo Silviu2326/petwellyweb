@@ -6,18 +6,29 @@
  * y caen al valor por defecto en local/dev.
  */
 
-const fallbackSiteUrl = 'http://localhost:3000';
+const PROD_SITE_URL = 'https://www.petwellly.com';
+const fallbackSiteUrl = process.env.NODE_ENV === 'production'
+  ? PROD_SITE_URL
+  : 'http://localhost:3000';
 
 function clean(url: string | undefined, fallback: string) {
   const v = (url || fallback).trim();
   return v.endsWith('/') ? v.slice(0, -1) : v;
 }
 
+if (process.env.NODE_ENV === 'production' && !process.env.NEXT_PUBLIC_SITE_URL) {
+  // Falla ruidosamente en build de prod si falta la env var, en lugar de
+  // emitir sitemap/canonical apuntando a www.petwellly.com por accidente.
+  console.warn(
+    '[site.ts] NEXT_PUBLIC_SITE_URL no está definida — usando fallback ' + PROD_SITE_URL,
+  );
+}
+
 const appUrl = clean(process.env.NEXT_PUBLIC_APP_URL, 'https://app.petwellly.com');
 
 export const siteConfig = {
   name: 'Petwellly',
-  legalName: 'Petwelly Software, S.L.',
+  legalName: 'Petwellly Software, S.L.',
   description:
     'ERP profesional para criaderos de perros: salud, camadas, ventas, portal del cliente y finanzas en un único sitio.',
   descriptionEn:
@@ -31,15 +42,15 @@ export const siteConfig = {
   gscVerification: process.env.NEXT_PUBLIC_GSC_VERIFICATION || '',
   plausibleDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || '',
   email: {
-    sales: 'hola@petwelly.com',
-    support: 'soporte@petwelly.com',
+    sales: 'hola@petwellly.com',
+    support: 'soporte@petwellly.com',
   },
   social: {
-    twitter: 'https://twitter.com/petwelly',
-    instagram: 'https://instagram.com/petwelly',
-    linkedin: 'https://www.linkedin.com/company/petwelly',
-    youtube: 'https://www.youtube.com/@petwelly',
-    twitterHandle: '@petwelly',
+    twitter: 'https://twitter.com/petwellly',
+    instagram: 'https://instagram.com/petwellly',
+    linkedin: 'https://www.linkedin.com/company/petwellly',
+    youtube: 'https://www.youtube.com/@petwellly',
+    twitterHandle: '@petwellly',
   },
   founded: '2024',
   address: {
@@ -47,7 +58,7 @@ export const siteConfig = {
     region: 'Madrid',
     locality: 'Madrid',
   },
-  defaultOgImage: '/og-default.svg',
+  defaultOgImage: '/api/og',
 } as const;
 
 export type SiteConfig = typeof siteConfig;

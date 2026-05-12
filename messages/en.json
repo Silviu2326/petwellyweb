@@ -44,19 +44,7 @@
       "ctaPrimary": "Start 14-day free trial",
       "ctaSecondary": "See features",
       "trust": "No card required · Cancel anytime · Free migration",
-      "mockup": {
-        "kennel": "Green Forest",
-        "dogs": "12 dogs · 5 active reservations",
-        "salesUp": "+18% sales",
-        "today": "Today",
-        "month": "Month",
-        "vac": "Vacc. OK",
-        "list1": "Reservation confirmed · Anna Lopez",
-        "list2": "Vaccination due · Thor (6 days)",
-        "list3": "Whelping forecast · Mia (May 22)",
-        "saveLabel": "You save",
-        "saveValue": "8 h/week"
-      }
+      "imageAlt": "Petwellly dashboard showing dogs, litters, reservations, reminders and mobile app"
     },
     "logos": {
       "title": "Trusted by breeders across Spain"
@@ -572,13 +560,13 @@
       "successTitle": "Message sent!",
       "successBody": "We'll reply within 4 hours during business hours.",
       "errorTitle": "Sending failed",
-      "errorBody": "Please try again or email us at hello@petwelly.com."
+      "errorBody": "Please try again or email us at hello@petwellly.com."
     },
     "channels": {
       "title": "Other channels",
       "items": [
-        { "label": "Sales email", "value": "hello@petwelly.com" },
-        { "label": "Support", "value": "support@petwelly.com" },
+        { "label": "Sales email", "value": "hello@petwellly.com" },
+        { "label": "Support", "value": "support@petwellly.com" },
         { "label": "Phone", "value": "+34 900 000 000" },
         { "label": "Hours", "value": "Mon–Fri · 9:00–18:00 (Madrid)" }
       ]

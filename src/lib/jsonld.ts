@@ -84,20 +84,6 @@ export function softwareApplicationJsonLd(locale: Locale) {
     description:
       locale === 'en' ? siteConfig.descriptionEn : siteConfig.description,
     url: siteConfig.url,
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'EUR',
-      lowPrice: '23',
-      highPrice: '149',
-      offerCount: 3,
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      reviewCount: '128',
-      bestRating: '5',
-      worstRating: '1',
-    },
     featureList: [
       'Dog records', 'Litter management', 'Vet calendar',
       'Client portal', 'Sales pipeline', 'Invoicing',

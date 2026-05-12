@@ -58,7 +58,7 @@ function TermsES() {
       <p>
         El uso de Petwellly requiere una suscripción de pago tras los 14 días de prueba. Los
         precios se publican en{' '}
-        <a href={`${siteConfig.url}/precios`}>petwelly.com/precios</a> y pueden incluir IVA según tu
+        <a href={`${siteConfig.url}/precios`}>petwellly.com/precios</a> y pueden incluir IVA según tu
         país. La cancelación detiene la próxima renovación; no devolvemos importes prorrateados
         salvo obligación legal.
       </p>
@@ -104,7 +104,7 @@ function TermsEN() {
       <h2>3. Subscription and billing</h2>
       <p>
         Use of Petwellly requires a paid subscription after the 14-day trial. Prices are published
-        at <a href={`${siteConfig.url}/en/pricing`}>petwelly.com/en/pricing</a> and may include VAT
+        at <a href={`${siteConfig.url}/en/pricing`}>petwellly.com/en/pricing</a> and may include VAT
         depending on your country. Cancellation stops the next renewal; we do not refund prorated
         amounts unless legally required.
       </p>

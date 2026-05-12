@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import {
   ArrowRight,
@@ -117,40 +118,20 @@ export default async function HomePage({
               </p>
             </div>
 
-            <div className="relative">
-              <Card className="shadow-cardHover" padding="md">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-12 h-12 rounded-2xl bg-primary text-white flex items-center justify-center">
-                    <DogIcon size={22} aria-hidden />
-                  </div>
-                  <div>
-                    <div className="text-base font-extrabold text-ink">{t('hero.mockup.kennel')}</div>
-                    <div className="text-xs text-ink-muted">{t('hero.mockup.dogs')}</div>
-                  </div>
-                  <Badge variant="success" className="ml-auto">{t('hero.mockup.salesUp')}</Badge>
-                </div>
-                <div className="grid grid-cols-3 gap-2 mb-4">
-                  <KpiMini label={t('hero.mockup.today')} value="32" tone="primary" />
-                  <KpiMini label={t('hero.mockup.month')} value="9.8k" tone="success" />
-                  <KpiMini label={t('hero.mockup.vac')} value="92%" tone="info" />
-                </div>
-                <ul className="space-y-2.5">
-                  <ListItem text={t('hero.mockup.list1')} tone="success" />
-                  <ListItem text={t('hero.mockup.list2')} tone="warning" />
-                  <ListItem text={t('hero.mockup.list3')} tone="primary" />
-                </ul>
-              </Card>
-              <div className="absolute -top-5 -right-3 sm:-top-6 sm:-right-6 animate-float">
-                <Card className="bg-primary text-white border-0 shadow-cardHover" padding="md">
-                  <div className="flex items-center gap-3">
-                    <Sparkles size={24} aria-hidden />
-                    <div>
-                      <div className="text-xs uppercase tracking-wider opacity-80">{t('hero.mockup.saveLabel')}</div>
-                      <div className="text-xl font-extrabold">{t('hero.mockup.saveValue')}</div>
-                    </div>
-                  </div>
-                </Card>
-              </div>
+            <div className="relative lg:-mr-12 xl:-mr-20">
+              <div
+                aria-hidden
+                className="absolute inset-0 -z-10 rounded-[2.5rem] bg-gradient-to-br from-primary/15 via-primary/5 to-transparent blur-3xl"
+              />
+              <Image
+                src="/hero.png"
+                alt={t('hero.imageAlt')}
+                width={567}
+                height={440}
+                priority
+                sizes="(min-width: 1280px) 720px, (min-width: 1024px) 56vw, 100vw"
+                className="w-full h-auto select-none drop-shadow-[0_30px_60px_rgba(15,55,40,0.18)]"
+              />
             </div>
           </div>
         </Container>
@@ -267,37 +248,5 @@ export default async function HomePage({
 
       <JsonLd data={softwareApplicationJsonLd(locale)} id="home-software-jsonld" />
     </>
-  );
-}
-
-function KpiMini({
-  label,
-  value,
-  tone,
-}: {
-  label: string;
-  value: string;
-  tone: 'primary' | 'success' | 'info';
-}) {
-  const map = {
-    primary: 'bg-primary-lighter text-primary',
-    success: 'bg-success-lighter text-success',
-    info: 'bg-info-lighter text-info',
-  };
-  return (
-    <div className={`rounded-xl p-2.5 text-center ${map[tone]}`}>
-      <div className="text-base font-extrabold leading-tight">{value}</div>
-      <div className="text-2xs uppercase tracking-wider font-semibold opacity-80">{label}</div>
-    </div>
-  );
-}
-
-function ListItem({ text, tone }: { text: string; tone: 'success' | 'warning' | 'primary' }) {
-  const map = { success: 'bg-success', warning: 'bg-warning', primary: 'bg-primary' };
-  return (
-    <li className="flex items-center gap-2.5 text-sm text-ink-secondary">
-      <span aria-hidden className={`w-2 h-2 rounded-full ${map[tone]} shrink-0`} />
-      {text}
-    </li>
   );
 }
