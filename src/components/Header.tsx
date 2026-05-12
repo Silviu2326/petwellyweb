@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { ArrowRight, Eye, Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/routing';
@@ -21,6 +21,27 @@ export function Header() {
   const t = useTranslations('nav');
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (open) {
+      const original = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => { document.body.style.overflow = original; };
+    }
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setOpen(false);
+    };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-line-light">
@@ -94,7 +115,10 @@ export function Header() {
             onClick={() => setOpen(false)}
             aria-hidden
           />
-          <div className="absolute inset-y-0 right-0 w-full max-w-sm bg-surface shadow-cardHover overflow-y-auto p-5">
+          <div
+            className="absolute inset-y-0 right-0 w-full max-w-sm bg-surface shadow-cardHover overflow-y-auto p-5"
+            onClick={(e) => e.stopPropagation()}
+          >
             <div className="flex items-center justify-between mb-6">
               <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
                 <img
