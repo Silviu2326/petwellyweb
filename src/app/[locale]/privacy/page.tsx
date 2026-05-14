@@ -42,12 +42,20 @@ export default async function PrivacyPage({
 }
 
 function PrivacyES() {
+  const controller = siteConfig.legalName || `${siteConfig.name} (sociedad pendiente de constitución)`;
+  const contactEmail = siteConfig.email.support;
   return (
     <>
       <h2>1. Responsable del tratamiento</h2>
       <p>
-        Responsable: {siteConfig.legalName}. Email de contacto:{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>.
+        Responsable: {controller}. {contactEmail ? (
+          <>
+            Email de contacto:{' '}
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+          </>
+        ) : (
+          <>Canal de contacto disponible en el formulario de la página de contacto.</>
+        )}
       </p>
       <h2>2. Datos que tratamos</h2>
       <ul>
@@ -70,8 +78,13 @@ function PrivacyES() {
       <h2>5. Derechos</h2>
       <p>
         Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición,
-        portabilidad y limitación escribiendo a{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>.
+        portabilidad y limitación {contactEmail ? (
+          <>
+            escribiendo a <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          </>
+        ) : (
+          <>a través del formulario de contacto</>
+        )}.
         También puedes presentar reclamación ante la Agencia Española de Protección de Datos.
       </p>
       <h2>6. Encargados de tratamiento</h2>
@@ -90,12 +103,20 @@ function PrivacyES() {
 }
 
 function PrivacyEN() {
+  const controller = siteConfig.legalName || `${siteConfig.name} (legal entity pending registration)`;
+  const contactEmail = siteConfig.email.support;
   return (
     <>
       <h2>1. Data controller</h2>
       <p>
-        Controller: {siteConfig.legalName}. Contact:{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>.
+        Controller: {controller}. {contactEmail ? (
+          <>
+            Contact:{' '}
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+          </>
+        ) : (
+          <>Reach us through the contact form.</>
+        )}
       </p>
       <h2>2. Data we process</h2>
       <ul>
@@ -118,8 +139,13 @@ function PrivacyEN() {
       <h2>5. Your rights</h2>
       <p>
         You can exercise access, rectification, deletion, objection, portability and limitation
-        rights by writing to{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>. You may
+        rights {contactEmail ? (
+          <>
+            by writing to <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          </>
+        ) : (
+          <>through the contact form</>
+        )}. You may
         also lodge a complaint with the Spanish Data Protection Agency.
       </p>
       <h2>6. Processors</h2>

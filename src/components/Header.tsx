@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { ArrowRight, Eye, Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/routing';
 import { cn } from '@/lib/cn';
@@ -11,7 +12,6 @@ import { LocaleSwitcher } from './LocaleSwitcher';
 const NAV_ITEMS = [
   { key: 'features', href: '/features' as const },
   { key: 'pricing', href: '/pricing' as const },
-  { key: 'caseStudies', href: '/case-studies' as const },
   { key: 'solutions', href: '/solutions' as const },
   { key: 'about', href: '/about' as const },
   { key: 'blog', href: '/blog' as const },
@@ -48,11 +48,12 @@ export function Header() {
       <header className="sticky top-0 z-40 bg-surface/80 backdrop-blur-md border-b border-line-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={siteConfig.name}>
-            <img
+            <Image
               src="/logo.png"
-              alt=""
+              alt={`${siteConfig.name} logo`}
               width={36}
               height={36}
+              priority
               className="h-9 w-9 shrink-0"
             />
             <span className="text-base font-extrabold text-ink">{siteConfig.name}</span>
@@ -123,9 +124,9 @@ export function Header() {
           >
             <div className="flex items-center justify-between mb-6">
               <Link href="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-                <img
+                <Image
                   src="/logo.png"
-                  alt=""
+                  alt={`${siteConfig.name} logo`}
                   width={36}
                   height={36}
                   className="h-9 w-9 shrink-0"

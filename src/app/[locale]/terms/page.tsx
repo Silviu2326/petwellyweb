@@ -41,6 +41,8 @@ export default async function TermsPage({
 }
 
 function TermsES() {
+  const owner = siteConfig.legalName || `${siteConfig.name} (sociedad pendiente de constitución)`;
+  const contactEmail = siteConfig.email.support;
   return (
     <>
       <h2>1. Objeto</h2>
@@ -51,14 +53,20 @@ function TermsES() {
       <h2>2. Cuenta</h2>
       <p>
         Eres responsable de mantener la confidencialidad de tus credenciales y de toda la
-        actividad realizada bajo tu cuenta. Notifícanos cualquier acceso no autorizado en{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>.
+        actividad realizada bajo tu cuenta. {contactEmail ? (
+          <>
+            Notifícanos cualquier acceso no autorizado en{' '}
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+          </>
+        ) : (
+          <>Notifícanos cualquier acceso no autorizado a través del formulario de contacto.</>
+        )}
       </p>
       <h2>3. Suscripción y facturación</h2>
       <p>
         El uso de Petwellly requiere una suscripción de pago tras los 14 días de prueba. Los
         precios se publican en{' '}
-        <a href={`${siteConfig.url}/precios`}>petwellly.com/precios</a> y pueden incluir IVA según tu
+        <a href={`${siteConfig.url}/es/precios`}>petwellly.com/es/precios</a> y pueden incluir IVA según tu
         país. La cancelación detiene la próxima renovación; no devolvemos importes prorrateados
         salvo obligación legal.
       </p>
@@ -70,7 +78,7 @@ function TermsES() {
       </ul>
       <h2>5. Propiedad intelectual</h2>
       <p>
-        El software, marcas y diseños son propiedad de {siteConfig.legalName}. Los datos que
+        El software, marcas y diseños son propiedad de {owner}. Los datos que
         introduzcas son tuyos y los puedes exportar en cualquier momento.
       </p>
       <h2>6. Limitación de responsabilidad</h2>
@@ -88,6 +96,8 @@ function TermsES() {
 }
 
 function TermsEN() {
+  const owner = siteConfig.legalName || `${siteConfig.name} (legal entity pending registration)`;
+  const contactEmail = siteConfig.email.support;
   return (
     <>
       <h2>1. Purpose</h2>
@@ -98,8 +108,14 @@ function TermsEN() {
       <h2>2. Account</h2>
       <p>
         You are responsible for keeping your credentials confidential and for all activity under
-        your account. Notify any unauthorized access at{' '}
-        <a href={`mailto:${siteConfig.email.support}`}>{siteConfig.email.support}</a>.
+        your account. {contactEmail ? (
+          <>
+            Notify any unauthorized access at{' '}
+            <a href={`mailto:${contactEmail}`}>{contactEmail}</a>.
+          </>
+        ) : (
+          <>Notify any unauthorized access through the contact form.</>
+        )}
       </p>
       <h2>3. Subscription and billing</h2>
       <p>
@@ -116,7 +132,7 @@ function TermsEN() {
       </ul>
       <h2>5. Intellectual property</h2>
       <p>
-        Software, trademarks and designs are owned by {siteConfig.legalName}. The data you enter
+        Software, trademarks and designs are owned by {owner}. The data you enter
         is yours and exportable at any time.
       </p>
       <h2>6. Limitation of liability</h2>

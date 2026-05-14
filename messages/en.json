@@ -7,9 +7,8 @@
   "nav": {
     "features": "Features",
     "pricing": "Pricing",
-    "about": "Team",
+    "about": "About",
     "blog": "Blog",
-    "caseStudies": "Case studies",
     "solutions": "Solutions",
     "contact": "Contact",
     "login": "Sign in",
@@ -31,7 +30,9 @@
       "subtitle": "Management, health and real cases. No spam, ever.",
       "placeholder": "you@email.com",
       "submit": "Subscribe",
-      "privacy": "By subscribing you accept our privacy policy."
+      "privacy": "By subscribing you accept our privacy policy.",
+      "successMessage": "Done! You'll get the first email very soon.",
+      "errorMessage": "Could not send. Please try again."
     }
   },
   "home": {
@@ -46,9 +47,6 @@
       "trust": "No card required · Cancel anytime · Free migration",
       "imageAlt": "Petwellly dashboard showing dogs, litters, reservations, reminders and mobile app"
     },
-    "logos": {
-      "title": "Trusted by breeders across Spain"
-    },
     "features": {
       "badge": "All in one",
       "title": "Designed for modern kennels",
@@ -59,8 +57,8 @@
           "body": "Health, genetics, documents and history — fully traceable and shareable with vet or client."
         },
         "litter": {
-          "title": "Litters & whelping log",
-          "body": "Plan crosses, log the whelping live and manage puppy reservations without chaos."
+          "title": "Litters & puppies",
+          "body": "Plan crosses, log the whelping and manage puppy reservations without chaos."
         },
         "client": {
           "title": "Client portal",
@@ -83,10 +81,9 @@
     "stats": {
       "title": "Why breeders switch to Petwellly",
       "items": {
-        "time": { "value": "1.5–2 h", "label": "saved every day" },
         "tools": { "value": "6 → 1", "label": "tools to a single app" },
-        "rating": { "value": "4.9/5", "label": "breeder satisfaction" },
-        "setup": { "value": "30 min", "label": "to onboard with your data" }
+        "data": { "value": "100%", "label": "data always exportable (CSV/PDF)" },
+        "lockin": { "value": "0", "label": "lock-in or cancellation fees" }
       }
     },
     "workflow": {
@@ -113,25 +110,9 @@
       }
     },
     "testimonials": {
-      "badge": "4.9/5 from real breeders",
-      "title": "Breeders speak",
-      "items": [
-        {
-          "name": "Marta R.",
-          "role": "Estrella Polar Kennel · Madrid",
-          "text": "I went from 3 spreadsheets to one screen. I got my Saturdays back."
-        },
-        {
-          "name": "Jorge L.",
-          "role": "Bulldog del Valle · Barcelona",
-          "text": "My clients see their puppies grow. Zero calls asking for photos."
-        },
-        {
-          "name": "Lucia S.",
-          "role": "Cria del Bosque · Asturias",
-          "text": "The whelping log saved me on a difficult delivery. Having the history right there was gold."
-        }
-      ]
+      "badge": "Honesty over numbers",
+      "title": "We don't have testimonials yet",
+      "body": "We're launching Petwellly with real breeders. As soon as we have stories we can publish with their permission, they'll live here. Until then, we'd rather show you the product than ads."
     },
     "faq": {
       "badge": "Common questions",
@@ -169,7 +150,7 @@
   "features": {
     "title": "Features",
     "subtitle": "Everything a professional kennel needs, without the bloat of a generic ERP.",
-    "intro": "Every module talks to the others: a vaccine deducts inventory, a reservation triggers shipping, a whelping updates the litter and creates puppy records.",
+    "intro": "Every module talks to the others: a vaccine deducts inventory, a reservation triggers delivery, a whelping updates the litter and creates puppy records.",
     "groups": {
       "dogs": {
         "title": "Dog record",
@@ -190,11 +171,9 @@
         "items": [
           "States: planned → confirmed → born → weaned → delivered",
           "Auto milestones: mating, ovulation, ultrasound, whelping, weaning",
-          "Weekly neonatal weighing with survival chart",
           "Pre-birth puppy reservations with waiting list",
           "External stud with pedigree and owner info",
-          "Auto contracts on weaning from template",
-          "Fertility report per dam (cycle interval, survival)"
+          "Contracts on weaning from template"
         ]
       },
       "health": {
@@ -202,7 +181,6 @@
         "description": "Calendar, digital prescriptions and SOAP notes. The vet works inside Petwellly.",
         "items": [
           "Vet calendar by week / month / quarter",
-          "Pre-configured protocols by breed and age",
           "Health booklet PDF generated on the spot",
           "Risky-cross alert for two carriers",
           "Digital prescription with dose, duration and posology",
@@ -223,9 +201,9 @@
       },
       "reservations": {
         "title": "Reservations",
-        "description": "Contract, signature and delivery checklist without Word or printer.",
+        "description": "Contract, payments and delivery checklist without Word or printer.",
         "items": [
-          "PDF contract from template with one-click signature",
+          "PDF contract from template",
           "Delivery checklist: booklet, pedigree, kit, contract, payment",
           "Auto notifications when status changes",
           "Reminder one week before delivery",
@@ -245,17 +223,6 @@
           "Overdue invoices badge in the menu"
         ]
       },
-      "shipping": {
-        "title": "Shipping & logistics",
-        "description": "SEUR, Correos and MRW connected. Automatic tracking and delivery note.",
-        "items": [
-          "Auto tracking with SEUR, Correos and MRW",
-          "Structured addresses ready for labels",
-          "Delivery confirmation with photo and signature",
-          "Delivery note PDF generated on the spot",
-          "Travel papers and CITES if applicable"
-        ]
-      },
       "portal": {
         "title": "Client portal",
         "description": "Your client watches the puppy grow and pays online without you.",
@@ -263,26 +230,13 @@
           "Guided onboarding the first time",
           "Visible health booklet of the puppy",
           "Weekly follow-up gallery from birth",
-          "Real-time shipping tracking",
           "Document upload (ID, payment, contract)",
           "Direct chat with templates and attachments"
-        ]
-      },
-      "site": {
-        "title": "Your public website (microsite)",
-        "description": "Every kennel gets a self-generated microsite, SEO-ready.",
-        "items": [
-          "Drag & drop block system, fully customizable",
-          "Dog catalog with featured photo and gallery",
-          "«Reserve this puppy» button straight to your CRM",
-          "Floating WhatsApp with pre-filled message",
-          "Public calendar of upcoming litters",
-          "Schema.org structured data for Google"
         ]
       }
     },
     "ctaFinal": {
-      "title": "There are 17 more areas. Want a 20-min demo of yours?",
+      "title": "Want a 20-min demo of the areas that matter to you?",
       "body": "We tailor the demo to what you actually do, no commitment.",
       "primary": "Book a demo",
       "secondary": "See pricing"
@@ -311,7 +265,6 @@
           "Up to 50 clients",
           "1 user",
           "Records, health and litters",
-          "Basic microsite",
           "Email support"
         ]
       },
@@ -327,8 +280,6 @@
           "Full client portal",
           "Sales pipeline and kanban",
           "Inventory with lots and expiry",
-          "Advanced microsite with blocks",
-          "SEUR/Correos/MRW integrations",
           "Priority support (chat + email)"
         ]
       },
@@ -343,8 +294,6 @@
           "Multi-kennel / multi-brand",
           "Granular roles and permissions",
           "Staff vet with SOAP notes",
-          "API and custom integrations",
-          "Full audit log with before/after",
           "Dedicated account manager"
         ]
       }
@@ -398,26 +347,22 @@
       "title": "Still have doubts?",
       "body": "We'll call you and answer in 10 minutes. No pressure.",
       "primary": "Book a call",
-      "secondary": "See case studies"
+      "secondary": "See features"
     }
   },
   "about": {
     "title": "Built with breeders. Not with powerpoints.",
-    "subtitle": "Petwellly was born in a kennel hallway, not in a corner office.",
-    "story": {
-      "title": "Our story",
-      "body": "We started by helping an Australian Shepherd kennel get rid of 9 spreadsheets. In three months they recovered an hour a day. We built the rest with 12 more kennels. Today we're a small team with a big goal: stop management from stealing your time so you can give it back to your dogs."
-    },
+    "subtitle": "Our priority: stop management from stealing your time so you can give it back to your dogs.",
     "values": {
       "title": "How we work",
       "items": [
         {
-          "title": "We talk to breeders weekly",
-          "body": "Every feature ships only after at least 3 real breeders validated it."
+          "title": "We talk to breeders",
+          "body": "Every product decision gets validated with real breeders before it ships, not against a spreadsheet."
         },
         {
           "title": "We don't sell what we can't deliver",
-          "body": "If an integration isn't ready yet, we tell you before you sign."
+          "body": "If an integration or module isn't ready yet, we tell you before you sign."
         },
         {
           "title": "Your data is yours",
@@ -427,16 +372,6 @@
           "title": "Human support",
           "body": "Talk to someone who knows a dysplasia from a luxation."
         }
-      ]
-    },
-    "team": {
-      "title": "The team",
-      "subtitle": "Small, multidisciplinary and obsessed with detail.",
-      "members": [
-        { "name": "Diego A.", "role": "CEO · Product", "bio": "10 years building niche software." },
-        { "name": "Sara M.", "role": "Customer Success", "bio": "Veterinarian. Talks to every kennel." },
-        { "name": "Ivan P.", "role": "Tech Lead", "bio": "Backend, infra and APIs." },
-        { "name": "Noa T.", "role": "Design", "bio": "Turns chaos into clear screens." }
       ]
     },
     "ctaFinal": {
@@ -459,76 +394,9 @@
     "related": "Related articles",
     "noPosts": "No articles published yet in this language."
   },
-  "caseStudies": {
-    "title": "Case studies",
-    "subtitle": "Real kennels with real numbers, before and after Petwellly.",
-    "readCase": "Read full case",
-    "metrics": {
-      "timeSaved": "Time saved",
-      "salesUp": "Sales increase",
-      "satisfaction": "Customer satisfaction",
-      "litters": "Litters/year"
-    },
-    "items": [
-      {
-        "slug": "estrella-polar",
-        "name": "Estrella Polar Kennel",
-        "breed": "Australian Shepherd",
-        "location": "Madrid",
-        "summary": "From 3 spreadsheets and 12 admin hours to one screen and 2 hours a day.",
-        "metrics": {
-          "timeSaved": "10 h/wk",
-          "salesUp": "+22%",
-          "satisfaction": "4.9/5",
-          "litters": "6"
-        },
-        "quote": "I got my Saturdays back and my clients see me as more professional.",
-        "person": "Marta R.",
-        "role": "Owner"
-      },
-      {
-        "slug": "bulldog-del-valle",
-        "name": "Bulldog del Valle",
-        "breed": "French Bulldog",
-        "location": "Barcelona",
-        "summary": "Client portal and weekly gallery: zero calls asking for photos.",
-        "metrics": {
-          "timeSaved": "6 h/wk",
-          "salesUp": "+18%",
-          "satisfaction": "4.8/5",
-          "litters": "4"
-        },
-        "quote": "My clients see their puppies grow live. That's the real differentiator.",
-        "person": "Jorge L.",
-        "role": "Owner"
-      },
-      {
-        "slug": "cria-del-bosque",
-        "name": "Cria del Bosque",
-        "breed": "Spanish Mastiff",
-        "location": "Asturias",
-        "summary": "Whelping log and vet protocols: complete clinical traceability.",
-        "metrics": {
-          "timeSaved": "8 h/wk",
-          "salesUp": "+15%",
-          "satisfaction": "5.0/5",
-          "litters": "3"
-        },
-        "quote": "The whelping log saved me on a difficult delivery. The history was gold.",
-        "person": "Lucia S.",
-        "role": "Owner"
-      }
-    ],
-    "ctaFinal": {
-      "title": "Your kennel can tell its story too.",
-      "body": "We help you set it up in a week.",
-      "primary": "Start free trial",
-      "secondary": "Talk to sales"
-    }
-  },
   "solutions": {
     "title": "Solutions by breed",
-    "subtitle": "Petwellly self-configures for the breed you raise. Each breed brings its own health protocols, genetic tests and timelines.",
+    "subtitle": "Every breed has its own health protocols, genetic tests and timelines. Petwellly gives you a clean template to document all of it per breed.",
     "ctaPrimary": "Try free with my breed",
     "ctaSecondary": "See pricing",
     "intro": "Pick your breed and we show you what changes."
@@ -542,7 +410,7 @@
       "email": "Email",
       "emailPlaceholder": "you@email.com",
       "kennel": "Kennel name",
-      "kennelPlaceholder": "Estrella Polar Kennel",
+      "kennelPlaceholder": "Your kennel name",
       "phone": "Phone",
       "phonePlaceholder": "+34 600 000 000",
       "subject": "Subject",
@@ -560,14 +428,11 @@
       "successTitle": "Message sent!",
       "successBody": "We'll reply within 4 hours during business hours.",
       "errorTitle": "Sending failed",
-      "errorBody": "Please try again or email us at hello@petwellly.com."
+      "errorBody": "Please try again in a few minutes."
     },
     "channels": {
       "title": "Other channels",
       "items": [
-        { "label": "Sales email", "value": "hello@petwellly.com" },
-        { "label": "Support", "value": "support@petwellly.com" },
-        { "label": "Phone", "value": "+34 683 52 96 29" },
         { "label": "Hours", "value": "Mon–Fri · 9:00–18:00 (Madrid)" }
       ]
     }

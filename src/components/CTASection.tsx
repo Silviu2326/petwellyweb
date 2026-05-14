@@ -5,8 +5,8 @@ import { cn } from '@/lib/cn';
 interface CTASectionProps {
   title: string;
   body: string;
-  primary: { label: string; href?: '/' | '/features' | '/pricing' | '/about' | '/blog' | '/contact' | '/case-studies' | '/solutions'; external?: string };
-  secondary?: { label: string; href?: '/' | '/features' | '/pricing' | '/about' | '/blog' | '/contact' | '/case-studies' | '/solutions'; external?: string };
+  primary: { label: string; href?: '/' | '/features' | '/pricing' | '/about' | '/blog' | '/contact' | '/solutions'; external?: string };
+  secondary?: { label: string; href?: '/' | '/features' | '/pricing' | '/about' | '/blog' | '/contact' | '/solutions'; external?: string };
   variant?: 'primary' | 'mesh';
   className?: string;
 }

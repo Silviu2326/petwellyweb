@@ -35,7 +35,6 @@ export default async function AboutPage({
   const t = await getTranslations({ locale, namespace: 'about' });
   const tNav = await getTranslations({ locale, namespace: 'nav' });
   const values = t.raw('values.items') as { title: string; body: string }[];
-  const team = t.raw('team.members') as { name: string; role: string; bio: string }[];
 
   const valueIcons = [HeartHandshake, MessagesSquare, Lock, Sparkles];
 
@@ -58,18 +57,8 @@ export default async function AboutPage({
         </Container>
       </Section>
 
-      {/* HISTORIA */}
-      <Section size="narrow" background="secondary">
-        <Card padding="lg" className="bg-surface">
-          <h2 className="text-balance">{t('story.title')}</h2>
-          <p className="text-base sm:text-lg text-ink-secondary mt-5 leading-relaxed text-pretty">
-            {t('story.body')}
-          </p>
-        </Card>
-      </Section>
-
       {/* VALORES */}
-      <Section>
+      <Section background="secondary">
         <div className="text-center mb-10">
           <h2>{t('values.title')}</h2>
         </div>
@@ -86,26 +75,6 @@ export default async function AboutPage({
               </Card>
             );
           })}
-        </div>
-      </Section>
-
-      {/* EQUIPO */}
-      <Section background="secondary">
-        <div className="text-center mb-10 max-w-2xl mx-auto">
-          <h2>{t('team.title')}</h2>
-          <p className="text-ink-secondary mt-3">{t('team.subtitle')}</p>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {team.map((m) => (
-            <Card key={m.name} className="text-center" padding="md">
-              <div className="w-16 h-16 rounded-full bg-primary text-white text-xl font-extrabold flex items-center justify-center mx-auto">
-                {m.name.split(' ').map((s) => s[0]).slice(0, 2).join('')}
-              </div>
-              <div className="text-base font-extrabold text-ink mt-3">{m.name}</div>
-              <div className="text-xs text-primary font-semibold uppercase tracking-wider mt-1">{m.role}</div>
-              <p className="text-xs text-ink-secondary mt-3">{m.bio}</p>
-            </Card>
-          ))}
         </div>
       </Section>
 

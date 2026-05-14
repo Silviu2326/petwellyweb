@@ -29,8 +29,10 @@ export function NewsletterForm() {
           body: JSON.stringify({ kind: 'newsletter', email }),
         });
         if (!res.ok) throw new Error('error');
-      } else {
+      } else if (siteConfig.email.sales) {
         window.location.href = `mailto:${siteConfig.email.sales}?subject=Newsletter&body=${encodeURIComponent(email)}`;
+      } else {
+        throw new Error('no-channel');
       }
       setState('sent');
       setEmail('');
@@ -43,7 +45,7 @@ export function NewsletterForm() {
     return (
       <div className="rounded-xl bg-primary-lighter border border-primary-light p-4 text-sm text-primary-dark flex items-start gap-2.5">
         <CheckCircle2 size={18} aria-hidden className="shrink-0 mt-0.5" />
-        <span>¡Hecho! Te llegará el primer email muy pronto.</span>
+        <span>{t('successMessage')}</span>
       </div>
     );
   }
@@ -73,7 +75,7 @@ export function NewsletterForm() {
       </div>
       <p className="text-[11px] text-ink-muted">{t('privacy')}</p>
       {state === 'error' && (
-        <p className="text-xs text-danger">No se pudo enviar. Vuelve a intentarlo.</p>
+        <p className="text-xs text-danger">{t('errorMessage')}</p>
       )}
     </form>
   );

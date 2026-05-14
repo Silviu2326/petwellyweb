@@ -88,12 +88,20 @@ export default async function ContactPage({
                   ? 'Reserva 20 minutos con un humano que conoce el sector.'
                   : 'Book 20 minutes with a human who knows the industry.'}
               </p>
-              <a
-                href={`mailto:${siteConfig.email.sales}?subject=Demo`}
-                className="inline-flex items-center justify-center h-10 px-4 rounded-xl bg-white text-primary text-sm font-semibold hover:bg-white/90"
-              >
-                {locale === 'es' ? 'Reservar 20 minutos' : 'Book 20 minutes'}
-              </a>
+              {siteConfig.email.sales ? (
+                <a
+                  href={`mailto:${siteConfig.email.sales}?subject=Demo`}
+                  className="inline-flex items-center justify-center h-10 px-4 rounded-xl bg-white text-primary text-sm font-semibold hover:bg-white/90"
+                >
+                  {locale === 'es' ? 'Reservar 20 minutos' : 'Book 20 minutes'}
+                </a>
+              ) : (
+                <p className="text-xs text-white/70">
+                  {locale === 'es'
+                    ? 'Usa el formulario y te llamamos.'
+                    : 'Use the form and we\'ll call you.'}
+                </p>
+              )}
             </Card>
           </div>
         </div>

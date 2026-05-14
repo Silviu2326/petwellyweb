@@ -7,9 +7,7 @@ import {
   Users,
   ClipboardList,
   Coins,
-  Truck,
   UserCircle2,
-  Globe2,
   Sparkles,
 } from 'lucide-react';
 
@@ -32,9 +30,7 @@ const GROUPS = [
   { key: 'clients', icon: Users, anchor: 'clientes' },
   { key: 'reservations', icon: ClipboardList, anchor: 'reservas' },
   { key: 'finance', icon: Coins, anchor: 'finanzas' },
-  { key: 'shipping', icon: Truck, anchor: 'envios' },
   { key: 'portal', icon: UserCircle2, anchor: 'portal' },
-  { key: 'site', icon: Globe2, anchor: 'microsite' },
 ] as const;
 
 export async function generateMetadata({
@@ -50,7 +46,7 @@ export async function generateMetadata({
     description: t('subtitle'),
     keywords: [
       'ERP criadero', 'gestión criadero perros', 'software centro canino',
-      'kennel software', 'breeder ERP', 'whelping log',
+      'kennel software', 'breeder ERP',
     ],
   });
 }

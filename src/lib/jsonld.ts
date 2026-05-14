@@ -1,5 +1,5 @@
 import { siteConfig } from './site';
-import type { Locale } from '@/i18n/routing';
+import { getPathname, type Locale } from '@/i18n/routing';
 
 /**
  * Generadores de JSON-LD (Schema.org) para inyectar en `<script>`.
@@ -7,6 +7,10 @@ import type { Locale } from '@/i18n/routing';
  *
  * Usa el componente `JsonLd` (`src/components/JsonLd.tsx`) para
  * pintarlo en la página.
+ *
+ * Datos opcionales (legalName, founded, email, sameAs): solo se emiten
+ * si están configurados en `siteConfig`. Cuando faltan, simplemente se
+ * omite la clave en lugar de publicar valores vacíos a Google.
  */
 
 interface BreadcrumbItem {
@@ -15,42 +19,47 @@ interface BreadcrumbItem {
 }
 
 export function organizationJsonLd(locale: Locale) {
+  const sameAs = [
+    siteConfig.social.twitter,
+    siteConfig.social.instagram,
+    siteConfig.social.linkedin,
+    siteConfig.social.youtube,
+  ].filter(Boolean);
+  const contactPoint: object[] = [];
+  if (siteConfig.email.sales) {
+    contactPoint.push({
+      '@type': 'ContactPoint',
+      contactType: 'sales',
+      email: siteConfig.email.sales,
+      availableLanguage: ['Spanish', 'English'],
+    });
+  }
+  if (siteConfig.email.support) {
+    contactPoint.push({
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      email: siteConfig.email.support,
+      availableLanguage: ['Spanish', 'English'],
+    });
+  }
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: siteConfig.name,
-    legalName: siteConfig.legalName,
+    ...(siteConfig.legalName && { legalName: siteConfig.legalName }),
     url: siteConfig.url,
     logo: `${siteConfig.url}/favicon.svg`,
     description:
       locale === 'en' ? siteConfig.descriptionEn : siteConfig.description,
-    foundingDate: siteConfig.founded,
+    ...(siteConfig.founded && { foundingDate: siteConfig.founded }),
     address: {
       '@type': 'PostalAddress',
       addressCountry: siteConfig.address.country,
       addressRegion: siteConfig.address.region,
       addressLocality: siteConfig.address.locality,
     },
-    contactPoint: [
-      {
-        '@type': 'ContactPoint',
-        contactType: 'sales',
-        email: siteConfig.email.sales,
-        availableLanguage: ['Spanish', 'English'],
-      },
-      {
-        '@type': 'ContactPoint',
-        contactType: 'customer support',
-        email: siteConfig.email.support,
-        availableLanguage: ['Spanish', 'English'],
-      },
-    ],
-    sameAs: [
-      siteConfig.social.twitter,
-      siteConfig.social.instagram,
-      siteConfig.social.linkedin,
-      siteConfig.social.youtube,
-    ],
+    ...(contactPoint.length > 0 && { contactPoint }),
+    ...(sameAs.length > 0 && { sameAs }),
   };
 }
 
@@ -80,14 +89,14 @@ export function softwareApplicationJsonLd(locale: Locale) {
     name: siteConfig.name,
     applicationCategory: 'BusinessApplication',
     applicationSubCategory: 'CRM',
-    operatingSystem: 'Web, iOS, Android',
+    operatingSystem: 'Web',
     description:
       locale === 'en' ? siteConfig.descriptionEn : siteConfig.description,
     url: siteConfig.url,
     featureList: [
       'Dog records', 'Litter management', 'Vet calendar',
       'Client portal', 'Sales pipeline', 'Invoicing',
-      'Inventory', 'Microsite generator',
+      'Inventory',
     ],
   };
 }
@@ -163,7 +172,8 @@ interface ProductPlanJsonLdInput {
   monthly: number;
   yearly: number;
 }
-export function productPlansJsonLd(plans: ProductPlanJsonLdInput[]) {
+export function productPlansJsonLd(plans: ProductPlanJsonLdInput[], locale: Locale) {
+  const pricingPath = getPathname({ locale, href: { pathname: '/pricing' } as never });
   return {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -176,7 +186,7 @@ export function productPlansJsonLd(plans: ProductPlanJsonLdInput[]) {
       price: p.yearly,
       priceCurrency: 'EUR',
       eligibleQuantity: { '@type': 'QuantitativeValue', value: 1, unitCode: 'MON' },
-      url: `${siteConfig.url}/precios`,
+      url: `${siteConfig.url}${pricingPath}`,
     })),
   };
 }

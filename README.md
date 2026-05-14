@@ -33,10 +33,11 @@ petwelly-web/
     ├── app/
     │   ├── layout.tsx                  ← Shell mínimo (sin <html>, lo emite [locale])
     │   ├── not-found.tsx               ← 404 root (HTML básico bilingüe)
-    │   ├── icon.svg, apple-icon.svg    ← File-conventions de Next
+    │   ├── icon.png, apple-icon.png    ← File-conventions de Next
     │   ├── sitemap.ts, robots.ts       ← Infra SEO dinámica
     │   ├── manifest.ts                 ← PWA manifest
     │   ├── feed.xml/route.ts           ← RSS 2.0 del blog
+    │   ├── api/og/route.tsx            ← Generador OG dinámico (ImageResponse)
     │   └── [locale]/
     │       ├── layout.tsx              ← <html lang>, <body>, providers, header/footer
     │       ├── not-found.tsx           ← 404 dentro del locale
@@ -45,7 +46,6 @@ petwelly-web/
     │       ├── pricing/page.tsx
     │       ├── about/page.tsx
     │       ├── contact/page.tsx
-    │       ├── case-studies/{page,[slug]/page}.tsx
     │       ├── solutions/{page,[breed]/page}.tsx
     │       ├── blog/{page,[slug]/page}.tsx
     │       └── {privacy,terms,cookies}/page.tsx
@@ -64,8 +64,7 @@ petwelly-web/
     │   ├── seo.ts                      ← `buildMetadata()` con hreflang + OG + Twitter
     │   ├── jsonld.ts                   ← Generadores Schema.org
     │   ├── blog.ts                     ← Loader MDX desde filesystem
-    │   ├── breeds.ts                   ← Catálogo de razas (soluciones)
-    │   └── case-studies.ts             ← Catálogo de casos de éxito
+    │   └── breeds.ts                   ← Catálogo de razas (soluciones)
     ├── middleware.ts                   ← next-intl rewrites (URLs localizadas)
     ├── styles/globals.css               ← Tailwind base + utilidades (.prose-petwelly)
     └── theme/colors.ts                 ← Mismos colores que el ERP
@@ -82,7 +81,6 @@ petwelly-web/
 | `/pricing` | `/es/precios` | `/en/pricing` |
 | `/about` | `/es/sobre` | `/en/about` |
 | `/blog`, `/blog/[slug]` | `/es/blog/...` | `/en/blog/...` |
-| `/case-studies`, `/case-studies/[slug]` | `/es/casos-de-exito/...` | `/en/case-studies/...` |
 | `/solutions`, `/solutions/[breed]` | `/es/soluciones/...` | `/en/solutions/...` |
 | `/contact` | `/es/contacto` | `/en/contact` |
 | `/privacy` | `/es/privacidad` | `/en/privacy` |
@@ -105,21 +103,20 @@ Las URLs se traducen automáticamente al cambiar de idioma con `LocaleSwitcher` 
   - Verificación Google Search Console (vía env)
 - **JSON-LD** inyectado en cada página relevante:
   - **Layout root**: `Organization` + `WebSite` (con SearchAction)
-  - **Home / Features / Solutions**: `SoftwareApplication` con `AggregateRating` y `featureList`
+  - **Home / Features / Solutions**: `SoftwareApplication` con `featureList`
   - **Pricing**: `Product` con `Offer` por plan + `FAQPage`
   - **Blog post**: `Article` con autor, fecha, modificación, imagen, locale
-  - **Case study**: `BreadcrumbList`
   - **Cualquier FAQ**: `FAQPage`
 - **Sitemap dinámico** (`/sitemap.xml`):
   - Recorre todas las rutas estáticas × locales
-  - Genera URLs para cada `solutions/[breed]` y `case-studies/[slug]`
+  - Genera URLs para cada `solutions/[breed]`
   - Incluye posts del blog por locale
   - Cada entrada con `alternates.languages` (hreflang)
 - **robots.txt** dinámico con sitemap absoluto.
 - **RSS 2.0** del blog en `/feed.xml?locale=es|en`.
 - **manifest.webmanifest** PWA-ready.
-- **Iconos**: `icon.svg`, `apple-icon.svg` (file-conventions).
-- **Favicon SVG** vectorial (escala perfecta).
+- **Iconos**: `icon.png`, `apple-icon.png` (file-conventions).
+- **Favicon SVG** vectorial en `public/favicon.svg` (escala perfecta).
 
 ---
 
@@ -199,10 +196,6 @@ El sitemap, RSS y la página de índice del blog lo recogen sin tocar nada.
 
 Edita `src/lib/breeds.ts` y añade un objeto al array. La URL `/es/soluciones/<slug>` y `/en/solutions/<slug>` se generan solas, igual que el sitemap y los hreflang.
 
-### Un caso de éxito nuevo
-
-Edita `src/lib/case-studies.ts`. Mismo patrón.
-
 ### Una página estática nueva
 
 1. Crea la carpeta `src/app/[locale]/<ruta-interna>/page.tsx`.
@@ -215,7 +208,7 @@ Edita `src/lib/case-studies.ts`. Mismo patrón.
 
 - **Theme único**: los colores se importan literalmente desde `src/theme/colors.ts` (espejo de `petwelly/src/theme/colors.ts`). Cambia ahí y se propaga.
 - **Carpetas internas en inglés**: convención de código; la URL visible se traduce vía `pathnames`.
-- **Sin generador de OG dinámico**: usamos un SVG estático compartido (`/og-default.svg`). Si quieres OG por post/raza, añade `app/<ruta>/opengraph-image.tsx` con `ImageResponse`.
+- **Generador OG dinámico**: `src/app/api/og/route.tsx` emite la imagen OG via `ImageResponse`. Las páginas la referencian por defecto desde `siteConfig.defaultOgImage = '/api/og'`. Si quieres OG por post/raza específico, añade un `app/<ruta>/opengraph-image.tsx`.
 - **Sin CMS**: el contenido vive en MDX y archivos TS bajo `src/lib`. Versionado, revisable en PR, sin pagos a Contentful o Sanity.
 - **Sin Tailwind Typography plugin**: `globals.css` define `.prose-petwelly` para el blog, ligero y sin cambios entre versiones del plugin.
 - **Sin dark mode**: la marca es luminosa; añadirlo después implica una variante de `theme/colors` y un toggle. No bloqueamos.
@@ -224,11 +217,12 @@ Edita `src/lib/case-studies.ts`. Mismo patrón.
 
 ## Roadmap sugerido
 
-- [ ] Generador de OG dinámico por post (`opengraph-image.tsx`).
+- [ ] OG por post/raza con `opengraph-image.tsx` propio (hoy todo usa `/api/og` genérico).
 - [ ] Search interna del blog (Pagefind o Fuse.js sobre el frontmatter).
 - [ ] Conexión real del formulario de contacto a un endpoint serverless (Vercel/AWS Lambda).
 - [ ] Traducir 1:1 los posts ES↔EN cuando los volúmenes lo justifiquen.
 - [ ] Página `/changelog` con releases del ERP por mes.
+- [ ] Restablecer página de testimonios/casos cuando haya clientes reales con permiso.
 
 ---
 

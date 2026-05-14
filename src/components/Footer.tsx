@@ -1,4 +1,5 @@
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { Link } from '@/i18n/routing';
 import { siteConfig } from '@/lib/site';
 import { NewsletterForm } from './NewsletterForm';
@@ -6,7 +7,6 @@ import { NewsletterForm } from './NewsletterForm';
 const productLinks = [
   { key: 'features', href: '/features' as const },
   { key: 'pricing', href: '/pricing' as const },
-  { key: 'caseStudies', href: '/case-studies' as const },
   { key: 'solutions', href: '/solutions' as const },
 ];
 const resourceLinks = [
@@ -31,9 +31,9 @@ export function Footer({ locale }: { locale: 'es' | 'en' }) {
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center gap-2.5 mb-4" aria-label={siteConfig.name}>
-              <img
+              <Image
                 src="/logo.png"
-                alt=""
+                alt={`${siteConfig.name} logo`}
                 width={36}
                 height={36}
                 className="h-9 w-9 shrink-0"
@@ -107,9 +107,9 @@ export function Footer({ locale }: { locale: 'es' | 'en' }) {
 
         <div className="mt-12 pt-8 border-t border-line-light flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-ink-muted">
-            © {year} {siteConfig.legalName} · {tFooter('rights')}.
+            © {year} {siteConfig.legalName || siteConfig.name} · {tFooter('rights')}.
           </p>
-          <p className="text-xs text-ink-muted">{tFooter('madeWith')} 🇪🇸</p>
+          <p className="text-xs text-ink-muted">{tFooter('madeWith')}</p>
         </div>
       </div>
     </footer>

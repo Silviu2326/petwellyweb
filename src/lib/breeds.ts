@@ -44,15 +44,15 @@ export const breeds: Breed[] = [
         name: 'Bulldog Francés',
         hero: 'Petwellly para criaderos de Bulldog Francés: gestión sanitaria, partos por cesárea programada y trazabilidad genética desde una sola pantalla.',
         whyMatters:
-          'El Bulldog Francés exige protocolos muy específicos: revisión cardio-respiratoria, control térmico, partos casi siempre por cesárea y vigilancia neonatal exhaustiva. Petwellly trae esos protocolos preconfigurados.',
+          'El Bulldog Francés exige protocolos muy específicos: revisión cardio-respiratoria, control térmico, partos casi siempre por cesárea y vigilancia neonatal exhaustiva. Petwellly te permite registrar cada control en su ficha y mantener la trazabilidad clínica completa.',
         protocols: [
           'Vacunación reforzada las primeras 12 semanas',
           'Control térmico semanal en gestación',
-          'Cesárea programada con cuenta atrás automática',
+          'Cesárea programada con recordatorio en el calendario',
           'Pesaje neonatal cada 12h las primeras 72h',
           'Test de paladar y narinas pre-entrega',
         ],
-        geneticTests: ['HUU', 'JHC', 'CMR1', 'DM (SOD1)', 'BAER (audición)'],
+        geneticTests: ['DM', 'Panel genético completo'],
         watchOut: [
           'BOAS (síndrome braquicefálico): registro y revisión cada 6 meses',
           'Displasia de codo y hombro',
@@ -69,15 +69,15 @@ export const breeds: Breed[] = [
         name: 'French Bulldog',
         hero: 'Petwellly for French Bulldog kennels: health management, scheduled C-sections and genetic traceability in one screen.',
         whyMatters:
-          'French Bulldogs require very specific protocols: cardio-respiratory check-ups, thermal control, almost-always C-section deliveries and exhaustive neonatal watch. Petwellly ships those protocols pre-configured.',
+          'French Bulldogs require very specific protocols: cardio-respiratory check-ups, thermal control, almost-always C-section deliveries and exhaustive neonatal watch. Petwellly lets you log every check in their record and keep full clinical traceability.',
         protocols: [
           'Reinforced vaccination during the first 12 weeks',
           'Weekly thermal control during pregnancy',
-          'Scheduled C-section with automatic countdown',
+          'Scheduled C-section with calendar reminder',
           'Neonatal weighing every 12h for the first 72h',
           'Palate and nostril check pre-delivery',
         ],
-        geneticTests: ['HUU', 'JHC', 'CMR1', 'DM (SOD1)', 'BAER (hearing)'],
+        geneticTests: ['DM', 'Full genetic panel'],
         watchOut: [
           'BOAS (brachycephalic syndrome): logged and reviewed every 6 months',
           'Elbow and shoulder dysplasia',
@@ -101,14 +101,14 @@ export const breeds: Breed[] = [
         name: 'Pastor Alemán',
         hero: 'Petwellly para criaderos de Pastor Alemán: control de displasias, pedigrees largos y selección reproductora informada.',
         whyMatters:
-          'En el Pastor Alemán la genética articular y el pedigree son determinantes. Petwellly trae el árbol con código de color por displasia y panel genético completo, evitando cruces de riesgo.',
+          'En el Pastor Alemán la genética articular y el pedigree son determinantes. Petwellly te permite documentar el panel genético en cada perro y visualizar el árbol del pedigree para evitar cruces de riesgo.',
         protocols: [
           'Test de displasia oficial a los 12–18 meses',
           'Calendario de vacunación reforzado en cachorros',
           'Plan de socialización temprana (semanas 4–10)',
           'Control de peso mensual hasta los 18 meses',
         ],
-        geneticTests: ['DM', 'MDR1', 'EPI', 'Hemofilia A'],
+        geneticTests: ['DM', 'MDR1', 'HD (displasia de cadera)', 'ED (displasia de codo)', 'Panel genético completo'],
         watchOut: [
           'Displasia de cadera y codo',
           'Mielopatía degenerativa',
@@ -124,14 +124,14 @@ export const breeds: Breed[] = [
         name: 'German Shepherd',
         hero: 'Petwellly for German Shepherd kennels: dysplasia control, deep pedigrees and informed breeding selection.',
         whyMatters:
-          'For German Shepherds, joint genetics and pedigree drive everything. Petwellly ships color-coded pedigree trees by dysplasia and a full genetic panel that prevents risky crosses.',
+          'For German Shepherds, joint genetics and pedigree drive everything. Petwellly lets you document the genetic panel per dog and visualize the pedigree tree to avoid risky crosses.',
         protocols: [
           'Official dysplasia test at 12–18 months',
           'Reinforced vaccination calendar for puppies',
           'Early socialization plan (weeks 4–10)',
           'Monthly weight control up to 18 months',
         ],
-        geneticTests: ['DM', 'MDR1', 'EPI', 'Hemophilia A'],
+        geneticTests: ['DM', 'MDR1', 'HD (hip dysplasia)', 'ED (elbow dysplasia)', 'Full genetic panel'],
         watchOut: [
           'Hip and elbow dysplasia',
           'Degenerative myelopathy',
@@ -152,16 +152,16 @@ export const breeds: Breed[] = [
     content: {
       es: {
         name: 'Mastín',
-        hero: 'Petwellly para criaderos de Mastín: protocolos de crecimiento lento, dosis ajustadas por peso y trazabilidad de partos largos.',
+        hero: 'Petwellly para criaderos de Mastín: protocolos de crecimiento lento, dosis ajustadas por peso y seguimiento de partos largos.',
         whyMatters:
-          'El Mastín crece despacio y pesa mucho: las dosis veterinarias varían cada semana y los partos pueden durar 12+ horas. Petwellly registra cada hito y avisa cuando algo se sale del rango esperado.',
+          'El Mastín crece despacio y pesa mucho: las dosis veterinarias varían cada semana y los partos pueden durar 12+ horas. Petwellly te permite registrar cada hito clínico y mantener el histórico de peso.',
         protocols: [
-          'Curva de crecimiento dual (peso/altura) hasta los 24 meses',
+          'Curva de crecimiento (peso) hasta los 24 meses',
           'Dosificación ajustada al peso actual del animal',
-          'Whelping log con duración entre cachorros',
+          'Registro del parto con horas y observaciones',
           'Pesaje neonatal cada 24h durante 14 días',
         ],
-        geneticTests: ['DM', 'CMR1', 'Hipotiroidismo'],
+        geneticTests: ['DM', 'HD (displasia de cadera)', 'Panel genético completo'],
         watchOut: [
           'Displasia de cadera y codo',
           'Cardiomiopatía dilatada',
@@ -175,16 +175,16 @@ export const breeds: Breed[] = [
       },
       en: {
         name: 'Mastiff',
-        hero: 'Petwellly for Mastiff kennels: slow-growth protocols, weight-tuned dosing and long-whelping traceability.',
+        hero: 'Petwellly for Mastiff kennels: slow-growth protocols, weight-tuned dosing and tracking of long deliveries.',
         whyMatters:
-          'Mastiffs grow slowly and weigh a lot: vet doses change weekly and deliveries can last 12+ hours. Petwellly logs every milestone and alerts when something falls out of range.',
+          'Mastiffs grow slowly and weigh a lot: vet doses change weekly and deliveries can last 12+ hours. Petwellly lets you log every clinical milestone and keep the full weight history.',
         protocols: [
-          'Dual growth curve (weight/height) up to 24 months',
+          'Weight growth curve up to 24 months',
           'Dosing tuned to the dog\'s current weight',
-          'Whelping log with inter-puppy duration',
+          'Whelping log with timestamps and observations',
           'Neonatal weighing every 24h for 14 days',
         ],
-        geneticTests: ['DM', 'CMR1', 'Hypothyroidism'],
+        geneticTests: ['DM', 'HD (hip dysplasia)', 'Full genetic panel'],
         watchOut: [
           'Hip and elbow dysplasia',
           'Dilated cardiomyopathy',
@@ -205,15 +205,15 @@ export const breeds: Breed[] = [
     content: {
       es: {
         name: 'Border Collie',
-        hero: 'Petwellly para criaderos de Border Collie: panel genético completo, trazabilidad de líneas de trabajo y reservas con perfil del cachorro.',
+        hero: 'Petwellly para criaderos de Border Collie: panel genético, trazabilidad de líneas de trabajo y reservas con perfil del cachorro.',
         whyMatters:
-          'El Border Collie es perro de trabajo y deporte: los compradores buscan líneas concretas y perfiles temperamentales. Petwellly te ayuda a documentar test, líneas y comportamiento desde el día 1.',
+          'El Border Collie es perro de trabajo y deporte: los compradores buscan líneas concretas y perfiles temperamentales. Petwellly te ayuda a documentar tests, líneas y comportamiento desde el día 1.',
         protocols: [
-          'Test genético al destete (CEA, TNS, MDR1)',
+          'Test genético al destete',
           'Plan de socialización y enriquecimiento por semana',
           'Test de temperamento (pre-entrega)',
         ],
-        geneticTests: ['CEA', 'TNS', 'MDR1', 'CL', 'IGS'],
+        geneticTests: ['MDR1', 'DM', 'Panel genético completo'],
         watchOut: [
           'Anomalía del ojo del Collie (CEA)',
           'Neutropenia cíclica del trabajador (TNS)',
@@ -227,15 +227,15 @@ export const breeds: Breed[] = [
       },
       en: {
         name: 'Border Collie',
-        hero: 'Petwellly for Border Collie kennels: full genetic panel, working-line traceability and reservations with puppy profile.',
+        hero: 'Petwellly for Border Collie kennels: genetic panel, working-line traceability and reservations with puppy profile.',
         whyMatters:
           'Border Collies are working and sport dogs: buyers ask for specific lines and temperament profiles. Petwellly helps you document tests, lines and behavior from day one.',
         protocols: [
-          'Genetic test at weaning (CEA, TNS, MDR1)',
+          'Genetic test at weaning',
           'Weekly socialization and enrichment plan',
           'Temperament test (pre-delivery)',
         ],
-        geneticTests: ['CEA', 'TNS', 'MDR1', 'CL', 'IGS'],
+        geneticTests: ['MDR1', 'DM', 'Full genetic panel'],
         watchOut: [
           'Collie Eye Anomaly (CEA)',
           'Trapped Neutrophil Syndrome (TNS)',
@@ -256,15 +256,15 @@ export const breeds: Breed[] = [
     content: {
       es: {
         name: 'Golden Retriever',
-        hero: 'Petwellly para criaderos de Golden Retriever: panel genético amplio, control de displasias y portal del cliente con galería semanal.',
+        hero: 'Petwellly para criaderos de Golden Retriever: panel genético, control de displasias y portal del cliente con galería semanal.',
         whyMatters:
-          'El Golden tiene una base genética que requiere tests amplios y compradores que esperan profesionalidad y seguimiento. Petwellly te da las dos cosas: trazabilidad clínica y galería semanal automática.',
+          'El Golden tiene una base genética que requiere tests amplios y compradores que esperan profesionalidad y seguimiento. Petwellly te da las dos cosas: trazabilidad clínica y portal del cliente con galería.',
         protocols: [
           'Test oficial de displasia y oftalmológico anual',
           'Panel genético al destete',
-          'Galería semanal automática para el cliente',
+          'Galería del cachorro para el cliente',
         ],
-        geneticTests: ['ICT-A', 'PRA-prcd', 'PRA1/PRA2', 'NCL', 'DM'],
+        geneticTests: ['PRA', 'DM', 'HD (displasia de cadera)', 'ED (displasia de codo)', 'Panel genético completo'],
         watchOut: [
           'Displasia de cadera y codo',
           'Cardiopatía SAS',
@@ -278,15 +278,15 @@ export const breeds: Breed[] = [
       },
       en: {
         name: 'Golden Retriever',
-        hero: 'Petwellly for Golden Retriever kennels: broad genetic panel, dysplasia control and client portal with weekly gallery.',
+        hero: 'Petwellly for Golden Retriever kennels: genetic panel, dysplasia control and client portal with weekly gallery.',
         whyMatters:
-          'Goldens have a genetic baseline that requires wide testing, and buyers expect professionalism and follow-up. Petwellly gives you both: clinical traceability and an automatic weekly gallery.',
+          'Goldens have a genetic baseline that requires wide testing, and buyers expect professionalism and follow-up. Petwellly gives you both: clinical traceability and a client portal with gallery.',
         protocols: [
           'Annual official dysplasia and ophthalmological test',
           'Genetic panel at weaning',
-          'Automatic weekly gallery for the client',
+          'Puppy gallery for the client',
         ],
-        geneticTests: ['ICT-A', 'PRA-prcd', 'PRA1/PRA2', 'NCL', 'DM'],
+        geneticTests: ['PRA', 'DM', 'HD (hip dysplasia)', 'ED (elbow dysplasia)', 'Full genetic panel'],
         watchOut: [
           'Hip and elbow dysplasia',
           'SAS cardiopathy',
@@ -309,13 +309,13 @@ export const breeds: Breed[] = [
         name: 'Chihuahua',
         hero: 'Petwellly para criaderos de Chihuahua: dosis ultra-precisas, control de hipoglucemia neonatal y planificación de partos cuidadosos.',
         whyMatters:
-          'El Chihuahua exige precisión: las dosis veterinarias se mueven en miligramos y los neonatos pueden hipoglucemiar en horas. Petwellly redondea cada dosis al peso real y avisa de pesos preocupantes.',
+          'El Chihuahua exige precisión: las dosis veterinarias se mueven en miligramos y los neonatos pueden hipoglucemiar en horas. Petwellly te permite registrar dosis al peso real del animal y mantener el histórico de pesajes.',
         protocols: [
           'Pesaje neonatal cada 6h los primeros 3 días',
-          'Alerta de hipoglucemia con peso mínimo por hora',
+          'Registro del peso para detectar tendencia preocupante',
           'Cesárea programada en hembras pequeñas',
         ],
-        geneticTests: ['Luxación rotuliana (rx)', 'Ductus arterioso persistente'],
+        geneticTests: ['Panel genético completo'],
         watchOut: [
           'Hidrocefalia',
           'Luxación rotuliana',
@@ -331,13 +331,13 @@ export const breeds: Breed[] = [
         name: 'Chihuahua',
         hero: 'Petwellly for Chihuahua kennels: ultra-precise dosing, neonatal hypoglycemia control and careful whelping planning.',
         whyMatters:
-          'Chihuahuas demand precision: vet doses run in milligrams and neonates can go hypoglycemic in hours. Petwellly rounds every dose to actual weight and flags worrying weights.',
+          'Chihuahuas demand precision: vet doses run in milligrams and neonates can go hypoglycemic in hours. Petwellly lets you log dosing to actual weight and keep the full weighing history.',
         protocols: [
           'Neonatal weighing every 6h for the first 3 days',
-          'Hypoglycemia alert with hourly minimum weight',
+          'Weight log to spot worrying trends',
           'Scheduled C-section for small dams',
         ],
-        geneticTests: ['Patellar luxation (x-ray)', 'Patent ductus arteriosus'],
+        geneticTests: ['Full genetic panel'],
         watchOut: [
           'Hydrocephalus',
           'Patellar luxation',

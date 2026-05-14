@@ -3,7 +3,6 @@ import type { MetadataRoute } from 'next';
 import { siteConfig } from '@/lib/site';
 import { locales, pathnames, getPathname } from '@/i18n/routing';
 import { breeds } from '@/lib/breeds';
-import { caseStudies } from '@/lib/case-studies';
 import { getAllPostSlugs } from '@/lib/blog';
 
 /**
@@ -15,7 +14,6 @@ import { getAllPostSlugs } from '@/lib/blog';
  * Cubre:
  *  - Rutas estáticas (home, features, pricing, about, blog, contact, legal, etc.)
  *  - `solutions/[breed]` para cada raza
- *  - `case-studies/[slug]` para cada caso
  *  - `blog/[slug]` para cada post (por locale, no traducido entre idiomas)
  */
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -27,7 +25,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/features', priority: 0.9, changeFrequency: 'monthly' },
     { path: '/pricing', priority: 0.9, changeFrequency: 'weekly' },
-    { path: '/case-studies', priority: 0.8, changeFrequency: 'weekly' },
     { path: '/solutions', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/about', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/blog', priority: 0.7, changeFrequency: 'daily' },
@@ -67,31 +64,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages[l] = `${base}${getPathname({
           locale: l,
           href: { pathname: '/solutions/[breed]', params: { breed: b.slug } } as never,
-        })}`;
-      }
-      languages['x-default'] = languages.es;
-      out.push({
-        url,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.7,
-        alternates: { languages },
-      });
-    }
-  }
-
-  // /case-studies/[slug]
-  for (const c of caseStudies) {
-    for (const locale of locales) {
-      const url = `${base}${getPathname({
-        locale,
-        href: { pathname: '/case-studies/[slug]', params: { slug: c.slug } } as never,
-      })}`;
-      const languages: Record<string, string> = {};
-      for (const l of locales) {
-        languages[l] = `${base}${getPathname({
-          locale: l,
-          href: { pathname: '/case-studies/[slug]', params: { slug: c.slug } } as never,
         })}`;
       }
       languages['x-default'] = languages.es;

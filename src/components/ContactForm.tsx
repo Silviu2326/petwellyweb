@@ -33,9 +33,11 @@ export function ContactForm() {
           body: JSON.stringify({ kind: 'contact', ...data }),
         });
         if (!res.ok) throw new Error('error');
-      } else {
+      } else if (siteConfig.email.sales) {
         const body = `${data.message}\n\n— ${data.name} (${data.email}) — ${data.kennel || ''}`;
         window.location.href = `mailto:${siteConfig.email.sales}?subject=${encodeURIComponent(`[${subject}] Web — ${data.name}`)}&body=${encodeURIComponent(body)}`;
+      } else {
+        throw new Error('no-channel');
       }
       setState('sent');
       form.reset();

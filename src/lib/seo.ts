@@ -109,8 +109,10 @@ export function buildMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      site: siteConfig.social.twitterHandle,
-      creator: siteConfig.social.twitterHandle,
+      ...(siteConfig.social.twitterHandle && {
+        site: siteConfig.social.twitterHandle,
+        creator: siteConfig.social.twitterHandle,
+      }),
       title,
       description,
       images: [ogImage],

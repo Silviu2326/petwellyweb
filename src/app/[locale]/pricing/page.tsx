@@ -111,11 +111,11 @@ export default async function PricingPage({
           title={t('ctaFinal.title')}
           body={t('ctaFinal.body')}
           primary={{ label: t('ctaFinal.primary'), href: '/contact' }}
-          secondary={{ label: t('ctaFinal.secondary'), href: '/case-studies' }}
+          secondary={{ label: t('ctaFinal.secondary'), href: '/features' }}
         />
       </Section>
 
-      <JsonLd data={productPlansJsonLd(planOffers)} id="pricing-plans-jsonld" />
+      <JsonLd data={productPlansJsonLd(planOffers, locale)} id="pricing-plans-jsonld" />
       <span hidden>{siteConfig.name}</span>
     </>
   );

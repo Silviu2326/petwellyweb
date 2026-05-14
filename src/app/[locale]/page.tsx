@@ -74,7 +74,9 @@ export default async function HomePage({
     };
   });
 
-  const testimonials = t.raw('testimonials.items') as { name: string; role: string; text: string }[];
+  const testimonialsBadge = t('testimonials.badge');
+  const testimonialsTitle = t('testimonials.title');
+  const testimonialsBody = t('testimonials.body');
   const faqItems = t.raw('faq.items') as { q: string; a: string }[];
   const stepKeys = ['import', 'configure', 'operate', 'grow'] as const;
 
@@ -137,13 +139,13 @@ export default async function HomePage({
         </Container>
       </section>
 
-      {/* TRUST LOGOS / STATS */}
+      {/* STATS */}
       <Section spacing="sm" background="default">
         <p className="text-center text-xs uppercase tracking-[0.2em] text-ink-muted font-bold mb-7">
-          {t('logos.title')}
+          {t('stats.title')}
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-          {(['time', 'tools', 'rating', 'setup'] as const).map((k) => (
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          {(['tools', 'data', 'lockin'] as const).map((k) => (
             <Card key={k} className="text-center" padding="md">
               <div className="text-3xl sm:text-4xl font-extrabold text-primary">
                 {t(`stats.items.${k}.value`)}
@@ -199,30 +201,17 @@ export default async function HomePage({
         </ol>
       </Section>
 
-      {/* TESTIMONIALS */}
-      <Section background="secondary">
-        <div className="text-center mb-12">
+      {/* TESTIMONIALS (placeholder honesto: aún sin clientes publicables) */}
+      <Section background="secondary" size="narrow">
+        <Card padding="lg" className="bg-surface text-center">
           <Badge variant="warning" className="mb-3">
-            <Star size={12} aria-hidden /> {t('testimonials.badge')}
+            <Star size={12} aria-hidden /> {testimonialsBadge}
           </Badge>
-          <h2>{t('testimonials.title')}</h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-          {testimonials.map((tt) => (
-            <Card key={tt.name} className="h-full">
-              <div className="flex gap-0.5 mb-3 text-warning" aria-hidden>
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} size={14} className="fill-warning" />
-                ))}
-              </div>
-              <p className="text-base text-ink leading-relaxed">&ldquo;{tt.text}&rdquo;</p>
-              <div className="mt-5 pt-5 border-t border-line-light">
-                <div className="text-sm font-extrabold text-ink">{tt.name}</div>
-                <div className="text-xs text-ink-muted">{tt.role}</div>
-              </div>
-            </Card>
-          ))}
-        </div>
+          <h2 className="text-balance">{testimonialsTitle}</h2>
+          <p className="text-base text-ink-secondary mt-4 leading-relaxed max-w-2xl mx-auto text-pretty">
+            {testimonialsBody}
+          </p>
+        </Card>
       </Section>
 
       {/* FAQ */}

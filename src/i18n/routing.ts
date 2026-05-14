@@ -47,14 +47,6 @@ export const pathnames = {
     es: '/blog/[slug]',
     en: '/blog/[slug]',
   },
-  '/case-studies': {
-    es: '/casos-de-exito',
-    en: '/case-studies',
-  },
-  '/case-studies/[slug]': {
-    es: '/casos-de-exito/[slug]',
-    en: '/case-studies/[slug]',
-  },
   '/solutions': {
     es: '/soluciones',
     en: '/solutions',
