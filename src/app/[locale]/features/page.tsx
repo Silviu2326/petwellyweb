@@ -49,7 +49,7 @@ export async function generateMetadata({
     title: t('title'),
     description: t('subtitle'),
     keywords: [
-      'ERP criadero', 'gestión criadero perros', 'software perreras',
+      'ERP criadero', 'gestión criadero perros', 'software centro canino',
       'kennel software', 'breeder ERP', 'whelping log',
     ],
   });
