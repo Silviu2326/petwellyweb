@@ -7,7 +7,6 @@ import { NewsletterForm } from './NewsletterForm';
 const productLinks = [
   { key: 'features', href: '/features' as const },
   { key: 'pricing', href: '/pricing' as const },
-  { key: 'solutions', href: '/solutions' as const },
 ];
 const resourceLinks = [
   { key: 'blog', href: '/blog' as const },

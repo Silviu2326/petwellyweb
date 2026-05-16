@@ -6,7 +6,6 @@ import type { Locale } from '@/i18n/routing';
 import { Section } from '@/components/Section';
 import { Container } from '@/components/Container';
 import { Badge } from '@/components/Badge';
-import { Card } from '@/components/Card';
 import { FAQ } from '@/components/FAQ';
 import { CTASection } from '@/components/CTASection';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -43,7 +42,6 @@ export default async function PricingPage({
   const t = await getTranslations({ locale, namespace: 'pricing' });
   const tNav = await getTranslations({ locale, namespace: 'nav' });
   const faqItems = t.raw('faq.items') as { q: string; a: string }[];
-  const addons = t.raw('addons.items') as { name: string; body: string; price: string }[];
 
   // JSON-LD: planes como Product/Offer
   const planKeys = ['starter', 'breeder', 'kennel'] as const;
@@ -77,24 +75,6 @@ export default async function PricingPage({
 
       <Section spacing="sm">
         <PricingTable />
-      </Section>
-
-      {/* ADD-ONS */}
-      <Section background="secondary">
-        <div className="text-center mb-10">
-          <h2 className="text-balance">{t('addons.title')}</h2>
-        </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {addons.map((a) => (
-            <Card key={a.name} className="h-full">
-              <div className="flex items-center justify-between gap-3 mb-3">
-                <h3 className="text-base font-bold text-ink">{a.name}</h3>
-                <Badge variant="warning">{a.price}</Badge>
-              </div>
-              <p className="text-sm text-ink-secondary leading-relaxed">{a.body}</p>
-            </Card>
-          ))}
-        </div>
       </Section>
 
       {/* FAQ */}

@@ -298,26 +298,6 @@
         ]
       }
     },
-    "addons": {
-      "title": "Optional add-ons",
-      "items": [
-        {
-          "name": "Extra storage",
-          "body": "Additional 50 GB block for photos and videos.",
-          "price": "€9/mo"
-        },
-        {
-          "name": "WhatsApp Business",
-          "body": "Certified templates and unlimited outbound messages.",
-          "price": "€19/mo"
-        },
-        {
-          "name": "Assisted migration",
-          "body": "We move your spreadsheets and contracts. Free if migrating from another ERP.",
-          "price": "Free"
-        }
-      ]
-    },
     "faq": {
       "title": "Pricing questions",
       "items": [
@@ -393,13 +373,6 @@
     "back": "← Back to blog",
     "related": "Related articles",
     "noPosts": "No articles published yet in this language."
-  },
-  "solutions": {
-    "title": "Solutions by breed",
-    "subtitle": "Every breed has its own health protocols, genetic tests and timelines. Petwellly gives you a clean template to document all of it per breed.",
-    "ctaPrimary": "Try free with my breed",
-    "ctaSecondary": "See pricing",
-    "intro": "Pick your breed and we show you what changes."
   },
   "contact": {
     "title": "Let's talk",

@@ -2,7 +2,6 @@ import type { MetadataRoute } from 'next';
 
 import { siteConfig } from '@/lib/site';
 import { locales, pathnames, getPathname } from '@/i18n/routing';
-import { breeds } from '@/lib/breeds';
 import { getAllPostSlugs } from '@/lib/blog';
 
 /**
@@ -13,7 +12,6 @@ import { getAllPostSlugs } from '@/lib/blog';
  *
  * Cubre:
  *  - Rutas estáticas (home, features, pricing, about, blog, contact, legal, etc.)
- *  - `solutions/[breed]` para cada raza
  *  - `blog/[slug]` para cada post (por locale, no traducido entre idiomas)
  */
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -25,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/', priority: 1.0, changeFrequency: 'weekly' },
     { path: '/features', priority: 0.9, changeFrequency: 'monthly' },
     { path: '/pricing', priority: 0.9, changeFrequency: 'weekly' },
-    { path: '/solutions', priority: 0.8, changeFrequency: 'monthly' },
     { path: '/about', priority: 0.6, changeFrequency: 'monthly' },
     { path: '/blog', priority: 0.7, changeFrequency: 'daily' },
     { path: '/contact', priority: 0.6, changeFrequency: 'monthly' },
@@ -47,31 +44,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: sp.changeFrequency,
         priority: sp.priority,
-        alternates: { languages },
-      });
-    }
-  }
-
-  // /solutions/[breed]
-  for (const b of breeds) {
-    for (const locale of locales) {
-      const url = `${base}${getPathname({
-        locale,
-        href: { pathname: '/solutions/[breed]', params: { breed: b.slug } } as never,
-      })}`;
-      const languages: Record<string, string> = {};
-      for (const l of locales) {
-        languages[l] = `${base}${getPathname({
-          locale: l,
-          href: { pathname: '/solutions/[breed]', params: { breed: b.slug } } as never,
-        })}`;
-      }
-      languages['x-default'] = languages.es;
-      out.push({
-        url,
-        lastModified: new Date(),
-        changeFrequency: 'monthly',
-        priority: 0.7,
         alternates: { languages },
       });
     }

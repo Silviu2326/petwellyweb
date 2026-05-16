@@ -47,14 +47,6 @@ export const pathnames = {
     es: '/blog/[slug]',
     en: '/blog/[slug]',
   },
-  '/solutions': {
-    es: '/soluciones',
-    en: '/solutions',
-  },
-  '/solutions/[breed]': {
-    es: '/soluciones/[breed]',
-    en: '/solutions/[breed]',
-  },
   '/contact': {
     es: '/contacto',
     en: '/contact',

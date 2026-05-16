@@ -12,7 +12,6 @@ import { LocaleSwitcher } from './LocaleSwitcher';
 const NAV_ITEMS = [
   { key: 'features', href: '/features' as const },
   { key: 'pricing', href: '/pricing' as const },
-  { key: 'solutions', href: '/solutions' as const },
   { key: 'about', href: '/about' as const },
   { key: 'blog', href: '/blog' as const },
 ];

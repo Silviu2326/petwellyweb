@@ -298,26 +298,6 @@
         ]
       }
     },
-    "addons": {
-      "title": "Add-ons opcionales",
-      "items": [
-        {
-          "name": "Almacenamiento extra",
-          "body": "Bloque de 50 GB adicionales para fotos y vídeos.",
-          "price": "9 €/mes"
-        },
-        {
-          "name": "WhatsApp Business",
-          "body": "Plantillas certificadas y mensajes salientes ilimitados.",
-          "price": "19 €/mes"
-        },
-        {
-          "name": "Migración asistida",
-          "body": "Pasamos tu Excel y tus contratos por ti, sin coste si vienes desde otro ERP.",
-          "price": "Gratis"
-        }
-      ]
-    },
     "faq": {
       "title": "Preguntas sobre precios",
       "items": [
@@ -393,13 +373,6 @@
     "back": "← Volver al blog",
     "related": "Artículos relacionados",
     "noPosts": "Aún no hay artículos publicados en este idioma."
-  },
-  "solutions": {
-    "title": "Soluciones por raza",
-    "subtitle": "Cada raza tiene sus protocolos sanitarios, sus pruebas genéticas y sus tiempos. Petwellly te da una plantilla limpia para documentar todo eso por raza.",
-    "ctaPrimary": "Probar gratis con mi raza",
-    "ctaSecondary": "Ver precios",
-    "intro": "Selecciona tu raza y te enseñamos qué cambia."
   },
   "contact": {
     "title": "Hablemos",
