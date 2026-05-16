@@ -54,7 +54,7 @@
       "items": {
         "dog": {
           "title": "Complete dog record",
-          "body": "Health, genetics, documents and history — fully traceable and shareable with vet or client."
+          "body": "Health, genetics, documents and history — fully traceable and shareable with team or client."
         },
         "litter": {
           "title": "Litters & puppies",
@@ -66,7 +66,7 @@
         },
         "calendar": {
           "title": "Unified calendar",
-          "body": "Vaccines, whelpings, deliveries, vet visits. One calendar per kennel."
+          "body": "Vaccines, whelpings, deliveries, visits. One calendar per kennel."
         },
         "finance": {
           "title": "Clear finance",
@@ -97,7 +97,7 @@
         },
         "configure": {
           "title": "2 · Configure once",
-          "body": "Contract templates, vet protocols, automatic notifications: define them once, applied forever."
+          "body": "Contract templates, health protocols, automatic notifications: define them once, applied forever."
         },
         "operate": {
           "title": "3 · Operate in one click",
@@ -125,10 +125,6 @@
         {
           "q": "What if I already have everything in Excel?",
           "a": "We import it for you. Upload your file and the system creates dogs, clients and reservations without typing."
-        },
-        {
-          "q": "Can I invite my vet?",
-          "a": "Yes. Grant access to the records they need and nothing else. If they're on staff, they get a dedicated panel."
         },
         {
           "q": "What happens to my data if I cancel?",
@@ -174,18 +170,6 @@
           "Pre-birth puppy reservations with waiting list",
           "External stud with pedigree and owner info",
           "Contracts on weaning from template"
-        ]
-      },
-      "health": {
-        "title": "Veterinary health",
-        "description": "Calendar, digital prescriptions and SOAP notes. The vet works inside Petwellly.",
-        "items": [
-          "Vet calendar by week / month / quarter",
-          "Health booklet PDF generated on the spot",
-          "Risky-cross alert for two carriers",
-          "Digital prescription with dose, duration and posology",
-          "Treatment tracking with adherence",
-          "Genetic tests integrated in the pedigree tree"
         ]
       },
       "clients": {
@@ -293,7 +277,6 @@
           "Unlimited users",
           "Multi-kennel / multi-brand",
           "Granular roles and permissions",
-          "Staff vet with SOAP notes",
           "Dedicated account manager"
         ]
       }

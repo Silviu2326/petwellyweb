@@ -54,7 +54,7 @@
       "items": {
         "dog": {
           "title": "Ficha completa por perro",
-          "body": "Salud, genética, documentos e historial — todo trazable y compartible con tu vet o cliente."
+          "body": "Salud, genética, documentos e historial — todo trazable y compartible con tu equipo o cliente."
         },
         "litter": {
           "title": "Camadas y cachorros",
@@ -66,7 +66,7 @@
         },
         "calendar": {
           "title": "Calendario unificado",
-          "body": "Vacunas, partos, entregas, visitas vet. Un único calendario por criadero."
+          "body": "Vacunas, partos, entregas, visitas. Un único calendario por criadero."
         },
         "finance": {
           "title": "Finanzas claras",
@@ -97,7 +97,7 @@
         },
         "configure": {
           "title": "2 · Configura una vez",
-          "body": "Plantillas de contrato, protocolos veterinarios, notificaciones automáticas: lo defines y se aplica solo."
+          "body": "Plantillas de contrato, protocolos sanitarios, notificaciones automáticas: lo defines y se aplica solo."
         },
         "operate": {
           "title": "3 · Opera con un clic",
@@ -125,10 +125,6 @@
         {
           "q": "¿Y si ya tengo Excel con todo?",
           "a": "Lo importamos por ti. Subes tu archivo y el sistema crea fichas, clientes y reservas sin que teclees nada."
-        },
-        {
-          "q": "¿Puedo invitar a mi veterinario?",
-          "a": "Sí. Le das acceso a las fichas que necesite y nada más. Si está en plantilla, tiene su propio panel."
         },
         {
           "q": "¿Qué pasa con mis datos si cancelo?",
@@ -174,18 +170,6 @@
           "Reservas de cachorros aún no nacidos con lista de espera",
           "Reproductor externo con pedigree y datos del propietario",
           "Contratos al destete desde plantilla"
-        ]
-      },
-      "health": {
-        "title": "Salud veterinaria",
-        "description": "Calendario, recetas digitales y notas SOAP. El vet trabaja desde Petwellly.",
-        "items": [
-          "Calendario veterinario por semana / mes / trimestre",
-          "Cartilla sanitaria en PDF generada al momento",
-          "Alerta de cruce de riesgo entre dos portadores",
-          "Receta digital con dosis, duración y posología",
-          "Tracking de tratamiento en curso (cumplimiento)",
-          "Pruebas genéticas integradas en el árbol del pedigree"
         ]
       },
       "clients": {
@@ -293,7 +277,6 @@
           "Usuarios ilimitados",
           "Multi-criadero / multi-marca",
           "Roles y permisos granulares",
-          "Veterinario en plantilla con SOAP",
           "Account manager dedicado"
         ]
       }

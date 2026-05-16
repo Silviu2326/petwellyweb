@@ -3,7 +3,6 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import {
   Dog as DogIcon,
   Heart,
-  Stethoscope,
   Users,
   ClipboardList,
   Coins,
@@ -26,7 +25,6 @@ import { siteConfig } from '@/lib/site';
 const GROUPS = [
   { key: 'dogs', icon: DogIcon, anchor: 'perros' },
   { key: 'litters', icon: Heart, anchor: 'camadas' },
-  { key: 'health', icon: Stethoscope, anchor: 'salud' },
   { key: 'clients', icon: Users, anchor: 'clientes' },
   { key: 'reservations', icon: ClipboardList, anchor: 'reservas' },
   { key: 'finance', icon: Coins, anchor: 'finanzas' },

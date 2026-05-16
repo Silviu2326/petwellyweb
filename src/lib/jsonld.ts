@@ -94,7 +94,7 @@ export function softwareApplicationJsonLd(locale: Locale) {
       locale === 'en' ? siteConfig.descriptionEn : siteConfig.description,
     url: siteConfig.url,
     featureList: [
-      'Dog records', 'Litter management', 'Vet calendar',
+      'Dog records', 'Litter management',
       'Client portal', 'Sales pipeline', 'Invoicing',
       'Inventory',
     ],
